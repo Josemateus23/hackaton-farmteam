@@ -1,0 +1,473 @@
+/* ==========================================================================
+   EditorialHero Module Stylesheet
+   Editorial Graphic Novel opening for Mato Grosso Tech Women Narrative
+   ========================================================================== */
+
+.heroTrack {
+  position: relative;
+  width: 100%;
+  background-color: var(--color-paper);
+  height: var(--track-height, 320vh);
+}
+
+/* Reduced Motion Override */
+.heroTrackReducedMotion {
+  height: auto !important;
+  min-height: 100vh;
+}
+
+/* The viewport-pinned stage (pinned by GSAP ScrollTrigger) */
+.stickyStage {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  background-color: var(--color-paper);
+}
+
+/* Top Navigation Bar: Discrete and Editorial */
+.topBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 25;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  pointer-events: none;
+}
+
+.descriptorWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.accentDot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-red);
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 0 2px rgba(215, 71, 53, 0.2);
+}
+
+.descriptor {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-ink);
+}
+
+.descriptorLine {
+  display: inline;
+}
+
+.descriptorLine + .descriptorLine {
+  margin-left: 0.35rem;
+}
+
+.skipButton {
+  pointer-events: auto;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-ink);
+  background: rgba(244, 227, 203, 0.9);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 1.15rem;
+  min-height: 44px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.skipButton:hover {
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+  border-color: var(--color-ink);
+  transform: translateY(-1px);
+}
+
+.skipButton:active {
+  transform: translateY(0);
+}
+
+/* Stage Content */
+.stageContent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Canvas & Poster Layer (The Visual Core) */
+.visualContainer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: var(--color-paper);
+  overflow: hidden;
+}
+
+.posterImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+  z-index: 2;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.posterHidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.heroCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  pointer-events: none;
+  display: block;
+}
+
+/* Editorial Transition Veil: seamlessly bridges last circuit frame to ivory chapter */
+.editorialTransitionOverlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-paper);
+  z-index: 5;
+  opacity: 0;
+  pointer-events: none;
+  will-change: opacity;
+}
+
+.exitBlueTrace {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  height: 120px;
+  background-color: var(--color-blue);
+  box-shadow: 0 0 12px var(--color-blue-glow);
+  transform-origin: top;
+  transform: scaleY(0);
+  opacity: 0;
+  border-radius: 2px;
+  will-change: transform, opacity;
+  z-index: 6;
+}
+
+/* Editorial Text Column (Desktop Left) */
+.textColumn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 44%;
+  max-width: 620px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3rem 0 3.5rem;
+  pointer-events: none;
+}
+
+.textCardWrapper {
+  position: relative;
+  min-height: 240px;
+  display: flex;
+  align-items: center;
+}
+
+.headlineText {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(calc(-50% + var(--y-offset, 0px)));
+  font-family: var(--font-display);
+  font-size: clamp(2.35rem, 4vw, 4.15rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--color-ink);
+  width: 100%;
+  will-change: opacity, transform;
+  text-wrap: balance;
+  text-shadow: 0 1px 2px rgba(244, 227, 203, 0.7);
+}
+
+/* Highlight word styling */
+.textHighlightRed {
+  color: var(--color-red);
+  position: relative;
+  display: inline;
+}
+
+.textHighlightBlue {
+  color: var(--color-blue);
+  position: relative;
+  display: inline;
+}
+
+/* Bottom Scroll Guidance */
+.scrollGuidance {
+  position: absolute;
+  bottom: 2.25rem;
+  left: 3.5rem;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  background: rgba(244, 227, 203, 0.85);
+  padding: 0.45rem 0.85rem;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+  border: 1px solid var(--color-border);
+}
+
+.scrollIconLine {
+  width: 2px;
+  height: 18px;
+  background-color: var(--color-ink);
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.scrollIconLine::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  border-bottom: 2px solid var(--color-ink);
+  border-right: 2px solid var(--color-ink);
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.scrollText {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-ink);
+}
+
+/* Progress Rule at the bottom */
+.progressBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background-color: var(--color-blue);
+  z-index: 30;
+  transition: width 0.05s linear;
+  box-shadow: 0 0 8px var(--color-blue-glow);
+}
+
+/* ==========================================================================
+   Mobile & Narrow Screen Layout Adaptations
+   ========================================================================== */
+@media (max-width: 900px) {
+  .stickyStage {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    height: 100dvh;
+    background-color: var(--color-paper);
+  }
+
+  .topBar {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    padding: 0.75rem clamp(1rem, 3.5vw, 1.25rem) 0.5rem clamp(1rem, 3.5vw, 1.25rem);
+    background-color: var(--color-paper);
+    z-index: 25;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .descriptorWrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.45rem;
+    min-width: 0;
+  }
+
+  .accentDot {
+    align-self: flex-start;
+    margin-top: 4px;
+    flex-shrink: 0;
+    width: 7px;
+    height: 7px;
+  }
+
+  .descriptor {
+    font-size: 0.75rem;
+    line-height: 1.25;
+    letter-spacing: 0.05em;
+  }
+
+  .descriptorLine {
+    display: block;
+    white-space: nowrap;
+  }
+
+  .descriptorLine + .descriptorLine {
+    margin-left: 0;
+  }
+
+  .skipButton {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.85rem;
+    min-height: 44px;
+    min-width: 44px;
+    letter-spacing: 0.02em;
+    flex-shrink: 0;
+  }
+
+  .stageContent {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Reserved Ivory Area at the top for Texts with Editorial Comic Dividing Border */
+  .textColumn {
+    order: 1;
+    position: relative;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 0.75rem clamp(1rem, 3.5vw, 1.25rem) 0.85rem clamp(1rem, 3.5vw, 1.25rem);
+    flex-shrink: 0;
+    background-color: var(--color-paper);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1.5px solid var(--color-ink);
+  }
+
+  .textCardWrapper {
+    min-height: 85px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .headlineText {
+    font-size: clamp(28px, 7.5vw, 32px);
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(calc(-50% + var(--y-offset, 0px)));
+    width: 100%;
+  }
+
+  /* Visual Stage below the text */
+  .visualContainer {
+    order: 2;
+    position: relative;
+    flex: 1;
+    width: 100%;
+    min-height: 280px;
+    overflow: hidden;
+    background-color: var(--color-paper);
+    border-top: none;
+  }
+
+  .posterImage {
+    object-position: 65% center;
+    object-fit: cover;
+  }
+
+  .scrollGuidance {
+    left: clamp(1rem, 3.5vw, 1.25rem);
+    bottom: 0.85rem;
+    background: rgba(244, 227, 203, 0.92);
+    padding: 0.4rem 0.75rem;
+    border-radius: 4px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--color-border);
+    gap: 0.6rem;
+  }
+
+  .scrollIconLine {
+    height: 16px;
+  }
+
+  .scrollText {
+    font-size: 0.75rem;
+  }
+}
+
+/* Fallback / Reduced Motion Presentation */
+.reducedMotionContainer {
+  padding: 6rem 2rem 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reducedMotionText {
+  margin-bottom: 2.5rem;
+}
+
+.reducedMotionImageWrapper {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--color-border);
+}
+
+.reducedMotionImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}

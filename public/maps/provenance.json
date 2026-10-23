@@ -1,0 +1,28 @@
+{
+  "title": "Contorno Cartográfico Oficial de Mato Grosso (MT)",
+  "ibgeCode": "51",
+  "sourceOrganization": "IBGE — Instituto Brasileiro de Geografia e Estatística",
+  "apiService": "Serviço de Dados / Malhas Geográficas v3",
+  "endpointUrl": "https://servicodados.ibge.gov.br/api/v3/malhas/estados/51?formato=application/vnd.geo+json",
+  "fetchedDate": "2026-10-23",
+  "geodeticReferenceSystem": "SIRGAS 2000 (EPSG:4674)",
+  "geographicBounds": {
+    "minLongitude": -61.6334,
+    "maxLongitude": -50.2248,
+    "minLatitude": -18.0416,
+    "maxLatitude": -7.349,
+    "meanLatitude": -12.6953,
+    "coordinatePointsCount": 2645
+  },
+  "projection": {
+    "type": "Conformal Mercator (Latitude-adjusted)",
+    "viewBox": "0 0 760 732",
+    "aspectRatio": 1.0383,
+    "orientation": "North Up, West Left, East Right, South Down"
+  },
+  "legalAndLicensing": {
+    "license": "Domínio Público / Dados Abertos Governamentais (Lei nº 12.527/2011)",
+    "attribution": "Fonte dos dados cartográficos: IBGE - Malhas Territoriais (2024/2026).",
+    "scopeDistinction": "Esta fonte refere-se exclusivamente à geometria e limites geopolíticos do estado. As futuras fontes de histórias, projetos e dados de pessoas em tecnologia serão catalogadas independentemente."
+  }
+}

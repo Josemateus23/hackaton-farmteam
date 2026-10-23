@@ -1,0 +1,434 @@
+/* ==========================================================================
+   MatoGrossoChapter Module Stylesheet - V2 Cinematic Motion
+   Temporarily pinned desktop scene, progressive cartographic draw,
+   reading hold, and coordinated exit transition.
+   ========================================================================== */
+
+.chapterSection {
+  position: relative;
+  width: 100%;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  scroll-margin-top: 2.5rem;
+  overflow: visible;
+  z-index: 20;
+}
+
+/* On Desktop, let GSAP pinSpacing handle the scroll track */
+@media (min-width: 901px) {
+  .chapterSection {
+    height: auto;
+    min-height: 100vh;
+  }
+}
+
+/* Pinned Stage Container */
+.pinnedStage {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 1.5rem 4rem;
+  box-sizing: border-box;
+  background-color: var(--color-paper);
+}
+
+@media (min-width: 901px) {
+  .pinnedStage {
+    height: 100vh;
+    padding: 3rem 3rem 4rem;
+    overflow: hidden;
+  }
+}
+
+/* Narrative Blue Connective Line entering from the Hero sequence */
+.blueConduitTrace {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 3px;
+  height: 60px;
+  background-color: var(--color-blue);
+  box-shadow: 0 0 10px var(--color-blue-glow);
+  transform-origin: top;
+  transform: scaleY(0);
+  pointer-events: none;
+  z-index: 20;
+}
+
+@media (max-width: 900px) {
+  .blueConduitTrace {
+    display: none;
+  }
+}
+
+/* Editorial separator with registration marks */
+.editorialDivider {
+  max-width: 1240px;
+  margin: 0 auto 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  color: var(--color-ink-subtle);
+  user-select: none;
+  width: 100%;
+}
+
+.registrationMark {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-red);
+}
+
+.dividerLine {
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-border);
+}
+
+.rubricText {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-ink-subtle);
+  white-space: nowrap;
+}
+
+/* Main Container */
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Layout Grid: Asymmetric on desktop, stacked on mobile */
+.layoutGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 960px) {
+  .layoutGrid {
+    grid-template-columns: 1.05fr 1.15fr;
+    gap: 4.5rem;
+  }
+}
+
+/* ==========================================================================
+   Editorial Text Column
+   ========================================================================== */
+
+.textColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  will-change: transform, opacity;
+}
+
+/* Marker Badge */
+.markerBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.75rem;
+  background-color: rgba(36, 101, 236, 0.08);
+  border: 1px solid rgba(36, 101, 236, 0.25);
+  border-radius: 9999px;
+  width: fit-content;
+}
+
+.markerDot {
+  width: 7px;
+  height: 7px;
+  background-color: var(--color-blue);
+  border-radius: 50%;
+  box-shadow: 0 0 6px var(--color-blue-glow);
+}
+
+.markerText {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-blue);
+}
+
+/* Headline Mask Container for clean reveal */
+.headlineMaskWrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 4.2vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--color-ink);
+  margin: 0;
+  will-change: transform, opacity;
+}
+
+.desktopBr {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .desktopBr {
+    display: inline;
+  }
+}
+
+/* Supporting Copy */
+.supportingText {
+  font-family: var(--font-body);
+  font-size: clamp(1.0625rem, 1.3vw, 1.25rem);
+  line-height: 1.55;
+  color: var(--color-ink-muted);
+  will-change: transform, opacity;
+}
+
+/* Editorial Context Annotation Card */
+.contextCard {
+  background-color: #fff9f0;
+  border: 1px solid var(--color-border-strong);
+  border-left: 4px solid var(--color-red);
+  padding: 1.5rem;
+  border-radius: 2px;
+  box-shadow: 0 4px 16px rgba(24, 24, 24, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  will-change: transform, opacity;
+}
+
+.contextCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.5rem;
+}
+
+.contextIndex {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-red);
+}
+
+.contextBody {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-ink);
+}
+
+.attributionFootnote {
+  border-top: 1px solid var(--color-border);
+  padding-top: 0.5rem;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--color-ink-subtle);
+}
+
+.attributionLabel {
+  font-weight: 600;
+  color: var(--color-ink-muted);
+}
+
+.attributionSource {
+  font-weight: 700;
+  color: var(--color-blue);
+}
+
+/* ==========================================================================
+   Map Column & Stage
+   ========================================================================== */
+
+.mapColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.mapStageCard {
+  position: relative;
+  width: 100%;
+  background-color: var(--color-paper-alt);
+  border: 1px solid var(--color-border-strong);
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(24, 24, 24, 0.08);
+  will-change: transform, opacity;
+}
+
+@media (min-width: 901px) {
+  .mapStageCard {
+    padding: 1.25rem;
+  }
+}
+
+/* Corner registration crosshairs matching comic editorial style */
+.cornerCrosshair {
+  position: absolute;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-red);
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.cornerTopLeft {
+  top: 4px;
+  left: 6px;
+}
+
+.cornerTopRight {
+  top: 4px;
+  right: 6px;
+}
+
+.cornerBottomLeft {
+  bottom: 4px;
+  left: 6px;
+}
+
+.cornerBottomRight {
+  bottom: 4px;
+  right: 6px;
+}
+
+/* Technical frame header */
+.mapRubricHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-display);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-ink-subtle);
+  padding: 0.25rem 0.5rem 0.6rem;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+}
+
+/* Cartographic SVG Stage */
+.svgWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1000 / 850;
+  max-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6ecdc;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.mapSvg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+}
+
+.mapFill {
+  fill: #ebdcc5;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.mapContourPath {
+  fill: none;
+  stroke: var(--color-ink);
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  will-change: stroke-dashoffset;
+}
+
+/* Map Card Footer */
+.mapCardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0.5rem 0.25rem;
+  border-top: 1px solid var(--color-border);
+  margin-top: 0.6rem;
+  font-family: var(--font-display);
+  font-size: 0.6875rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-ink-subtle);
+}
+
+.footerData {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.dataTag {
+  color: var(--color-ink-subtle);
+  font-weight: 600;
+}
+
+.dataValue {
+  color: var(--color-blue);
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   Prefers-reduced-motion Support
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .chapterSection {
+    height: auto !important;
+  }
+
+  .pinnedStage {
+    height: auto !important;
+    padding: 4rem 1.5rem !important;
+  }
+
+  .mapContourPath {
+    stroke-dashoffset: 0 !important;
+    transition: none !important;
+  }
+
+  .mapFill {
+    opacity: 1 !important;
+  }
+
+  .headline,
+  .supportingText,
+  .contextCard,
+  .mapStageCard,
+  .textColumn {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

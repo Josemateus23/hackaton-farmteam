@@ -1,0 +1,118 @@
+/* ==========================================================================
+   NextChapter Module Stylesheet
+   Clean editorial transition into the narrative chapters
+   ========================================================================== */
+
+.chapterSection {
+  position: relative;
+  width: 100%;
+  background-color: var(--color-paper);
+  border-top: 1px solid var(--color-border);
+  padding: 6rem 2.5rem 8rem 2.5rem;
+  z-index: 10;
+}
+
+.chapterContainer {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.chapterTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-red);
+  margin-bottom: 1.25rem;
+}
+
+.chapterTag::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 2px;
+  background-color: var(--color-red);
+}
+
+.chapterTitle {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 4.5vw, 3.75rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  color: var(--color-ink);
+  margin-bottom: 1.5rem;
+  text-wrap: balance;
+}
+
+.chapterSubtitle {
+  font-family: var(--font-body);
+  font-size: clamp(1.125rem, 1.8vw, 1.35rem);
+  line-height: 1.6;
+  color: var(--color-ink-muted);
+  max-width: 680px;
+  margin-bottom: 3.5rem;
+}
+
+/* Reserved cleanly structured outline for next chapters */
+.chapterGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.chapterCardStub {
+  background: rgba(24, 24, 24, 0.03);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-normal);
+}
+
+.chapterCardStub:hover {
+  background: rgba(24, 24, 24, 0.05);
+  border-color: var(--color-border-strong);
+  transform: translateY(-2px);
+}
+
+.cardIndex {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-blue);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+
+.cardTitle {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-ink);
+  margin-bottom: 0.5rem;
+}
+
+.cardDescription {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  color: var(--color-ink-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 800px) {
+  .chapterSection {
+    padding: 4rem 1.5rem 5rem 1.5rem;
+  }
+
+  .chapterGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

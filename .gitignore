@@ -1,0 +1,40 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies and Build
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Scratch, Testing Artifacts & Reference Benchmarks
+scratch/
+evidence/
+REFERENCIA_SANTIONI/
+entrega-visual-v1/
+*.zip
+
+# Test Recordings & Video Audits
+public/v2_evidencias/
+public/v2_videos/
+
+# Unused binary duplicate with non-standard characters
+public/images/Rob*
+
