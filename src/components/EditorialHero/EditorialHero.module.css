@@ -31,14 +31,14 @@
 /* Top Navigation Bar: Discrete and Editorial */
 .topBar {
   position: absolute;
-  top: 0;
+  top: 3.5rem;
   left: 0;
   right: 0;
   z-index: 25;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 3rem;
+  padding: 1rem 3rem;
   pointer-events: none;
 }
 

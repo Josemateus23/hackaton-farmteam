@@ -520,20 +520,21 @@
   position: relative;
   width: 100%;
   background-color: #f7ecd9;
-  border-radius: 2px;
-  overflow: hidden;
+  border-radius: 4px;
+  overflow: visible;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0.75rem 0.5rem;
 }
 
 .ottoImage {
   width: 100%;
   height: auto;
-  max-height: 480px;
+  max-height: 520px;
   object-fit: contain;
   display: block;
-  transform-origin: 50% 55%;
+  transform-origin: 50% 50%;
   will-change: transform;
 }
 
@@ -548,7 +549,7 @@
 }
 
 /* ==========================================================================
-   Prefers-reduced-motion Support
+   Prefers-reduced-motion & Static Mode Support
    ========================================================================== */
 
 @media (prefers-reduced-motion: reduce) {
@@ -581,4 +582,34 @@
   .ottoImage {
     transform: none !important;
   }
+}
+
+:global(.static-mode) .chapterSection {
+  height: auto !important;
+}
+
+:global(.static-mode) .pinnedStage {
+  height: auto !important;
+  padding: 3rem 1.5rem !important;
+}
+
+:global(.static-mode) .momentsContainer {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 2.5rem !important;
+  min-height: auto !important;
+}
+
+:global(.static-mode) .momentLayer {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
+:global(.static-mode) .ottoImage {
+  transform: none !important;
 }

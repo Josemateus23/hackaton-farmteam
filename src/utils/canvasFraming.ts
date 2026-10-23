@@ -16,10 +16,12 @@ export function computeFramingRect(
   canvasWidth: number,
   canvasHeight: number,
   isMobile: boolean,
-  progress = 0
+  progress = 0,
+  sourceWidth = 1920,
+  sourceHeight = 1080
 ): FramingRect {
-  const imgWidth = 1920;
-  const imgHeight = 1080;
+  const imgWidth = sourceWidth || 1920;
+  const imgHeight = sourceHeight || 1080;
 
   if (isMobile) {
     // In mobile portrait: show the scene with focus on character + circuit
@@ -70,8 +72,15 @@ export function drawFrameToCanvas(
   ctx.fillStyle = '#F4E3CB';
   ctx.fillRect(0, 0, canvasWidth, canvasHeight);
 
-  // 2. Compute framing bounds
-  const { dx, dy, dw, dh } = computeFramingRect(canvasWidth, canvasHeight, isMobile, progress);
+  // 2. Compute framing bounds with actual natural image dimensions
+  const { dx, dy, dw, dh } = computeFramingRect(
+    canvasWidth,
+    canvasHeight,
+    isMobile,
+    progress,
+    img.naturalWidth || 1920,
+    img.naturalHeight || 1080
+  );
 
   // 3. Draw image cleanly
   ctx.imageSmoothingEnabled = true;

@@ -9,9 +9,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 interface MatoGrossoChapterProps {
   className?: string;
+  isStaticMode?: boolean;
 }
 
-export const MatoGrossoChapter: React.FC<MatoGrossoChapterProps> = ({ className }) => {
+export const MatoGrossoChapter: React.FC<MatoGrossoChapterProps> = ({ className, isStaticMode = false }) => {
   const sectionRef = useRef<HTMLElement>(null);
   const pinStageRef = useRef<HTMLDivElement>(null);
   const pathRef = useRef<SVGPathElement>(null);
@@ -26,6 +27,18 @@ export const MatoGrossoChapter: React.FC<MatoGrossoChapterProps> = ({ className 
   const mapStageRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (isStaticMode) {
+      if (pathRef.current) gsap.set(pathRef.current, { strokeDashoffset: 0 });
+      if (mapFillRef.current) gsap.set(mapFillRef.current, { opacity: 1 });
+      if (headlineRef.current) gsap.set(headlineRef.current, { y: 0, opacity: 1 });
+      if (supportingTextRef.current) gsap.set(supportingTextRef.current, { y: 0, opacity: 1 });
+      if (contextCardRef.current) gsap.set(contextCardRef.current, { y: 0, opacity: 1 });
+      if (mapStageRef.current) gsap.set(mapStageRef.current, { scale: 1, x: 0, opacity: 1 });
+      if (textColumnRef.current) gsap.set(textColumnRef.current, { y: 0, opacity: 1 });
+      if (blueConduitRef.current) gsap.set(blueConduitRef.current, { scaleY: 1 });
+      return;
+    }
+
     const mm = gsap.matchMedia();
 
     // 1. DESKTOP SCENE (Pinned scroll narrative)
@@ -132,7 +145,7 @@ export const MatoGrossoChapter: React.FC<MatoGrossoChapterProps> = ({ className 
     return () => {
       mm.revert();
     };
-  }, []);
+  }, [isStaticMode]);
 
   return (
     <section

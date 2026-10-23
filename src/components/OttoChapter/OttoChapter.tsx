@@ -8,9 +8,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 interface OttoChapterProps {
   className?: string;
+  isStaticMode?: boolean;
 }
 
-export const OttoChapter: React.FC<OttoChapterProps> = ({ className }) => {
+export const OttoChapter: React.FC<OttoChapterProps> = ({ className, isStaticMode = false }) => {
   const sectionRef = useRef<HTMLElement>(null);
   const pinStageRef = useRef<HTMLDivElement>(null);
 
@@ -28,6 +29,18 @@ export const OttoChapter: React.FC<OttoChapterProps> = ({ className }) => {
   const ottoImageRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
+    if (isStaticMode) {
+      // In static mode, display all moments and pillars cleanly without pinning
+      const m1 = moment1Ref.current;
+      const m2 = moment2Ref.current;
+      const m3 = moment3Ref.current;
+      const img = ottoImageRef.current;
+      gsap.set([m1, m2, m3], { opacity: 1, y: 0, visibility: 'visible', pointerEvents: 'auto' });
+      gsap.set([pillar1Ref.current, pillar2Ref.current, pillar3Ref.current], { opacity: 1, x: 0 });
+      gsap.set(img, { scale: 1.0, y: 0 });
+      return;
+    }
+
     const mm = gsap.matchMedia();
 
     // 1. DESKTOP SCENE (3 Momentos Pinned Narrative)
@@ -69,8 +82,8 @@ export const OttoChapter: React.FC<OttoChapterProps> = ({ className }) => {
       tl.to(m1, { opacity: 0, y: -20, visibility: 'hidden', pointerEvents: 'none', duration: 0.1, ease: 'power2.in' }, 0.28)
         .set(m2, { visibility: 'visible', pointerEvents: 'auto' }, 0.30)
         .to(m2, { opacity: 1, y: 0, duration: 0.12, ease: 'power2.out' }, 0.30)
-        // Câmera aproxima sutilmente nos detalhes da bancada (sem cortar pés/braços)
-        .to(img, { scale: 1.04, y: -6, duration: 0.14, ease: 'power2.inOut' }, 0.28);
+        // Câmera estável sem cortar mão levantada ou cabeça do Otto
+        .to(img, { scale: 1.01, y: 0, duration: 0.14, ease: 'power2.inOut' }, 0.28);
 
       // --- MOMENTO 2: Entrada Sequencial dos Três Pilares Técnicos (0.36 -> 0.52) ---
       tl.to(pillar1Ref.current, { opacity: 1, x: 0, duration: 0.08, ease: 'power2.out' }, 0.36)
@@ -99,7 +112,7 @@ export const OttoChapter: React.FC<OttoChapterProps> = ({ className }) => {
     return () => {
       mm.revert();
     };
-  }, []);
+  }, [isStaticMode]);
 
   return (
     <section

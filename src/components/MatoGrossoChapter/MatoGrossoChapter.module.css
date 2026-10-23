@@ -432,3 +432,24 @@
     transition: none !important;
   }
 }
+
+:global(.static-mode) .chapterSection {
+  height: auto !important;
+}
+
+:global(.static-mode) .pinnedStage {
+  height: auto !important;
+  padding: 3rem 1.5rem !important;
+}
+
+:global(.static-mode) .mapStageCard,
+:global(.static-mode) .textColumn,
+:global(.static-mode) .headline,
+:global(.static-mode) .supportingText,
+:global(.static-mode) .contextCard,
+:global(.static-mode) .mapFill,
+:global(.static-mode) .blueConduitTrace {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}

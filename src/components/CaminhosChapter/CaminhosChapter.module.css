@@ -137,17 +137,12 @@
   z-index: 10;
 }
 
-/* Mobile Header (Hidden on Desktop >= 1024px) */
-.mobileHeader {
+/* Unified Chapter Header */
+.chapterHeader {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-}
-
-@media (min-width: 1024px) {
-  .mobileHeader {
-    display: none;
-  }
+  gap: 0.85rem;
+  width: 100%;
 }
 
 /* Marker Badge */
@@ -464,9 +459,28 @@
   .stageFrame,
   .stageImage,
   .desktopOverlayHeader,
-  .initiativeSection {
+  .initiativeSection,
+  .chapterHeader {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
   }
+}
+
+:global(.static-mode) .chapterSection {
+  height: auto !important;
+}
+
+:global(.static-mode) .pinnedStage {
+  height: auto !important;
+  padding: 3rem 1.5rem !important;
+}
+
+:global(.static-mode) .stageFrame,
+:global(.static-mode) .stageImage,
+:global(.static-mode) .initiativeSection,
+:global(.static-mode) .chapterHeader {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
 }

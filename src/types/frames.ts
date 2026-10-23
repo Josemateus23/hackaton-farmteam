@@ -2,12 +2,18 @@ export interface FrameItem {
   index: number;
   filename: string;
   url: string;
+  mobileUrl?: string;
   sizeBytes: number;
+  mobileSizeBytes?: number;
 }
 
 export interface FramesManifest {
   totalFrames: number;
   dimensions: {
+    width: number;
+    height: number;
+  };
+  mobileDimensions?: {
     width: number;
     height: number;
   };
@@ -17,6 +23,7 @@ export interface FramesManifest {
   lastFrameIndex: number;
   baseDir: string;
   publicUrlPrefix: string;
+  mobileUrlPrefix?: string;
   frames: FrameItem[];
 }
 

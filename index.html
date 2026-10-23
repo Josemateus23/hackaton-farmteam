@@ -19,13 +19,22 @@
       rel="stylesheet"
     />
 
-    <!-- Preload first frame as critical LCP resource -->
+    <!-- Preload first frame as critical LCP resource with responsive media queries -->
+    <link
+      rel="preload"
+      as="image"
+      href="/frames/landinghero/mobile/landinghero_0001.webp"
+      fetchpriority="high"
+      type="image/webp"
+      media="(max-width: 900px)"
+    />
     <link
       rel="preload"
       as="image"
       href="/frames/landinghero/frames/landinghero_0001.webp"
       fetchpriority="high"
       type="image/webp"
+      media="(min-width: 901px)"
     />
   </head>
   <body>

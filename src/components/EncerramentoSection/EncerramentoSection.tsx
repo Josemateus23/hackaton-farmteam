@@ -7,9 +7,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 interface EncerramentoSectionProps {
   className?: string;
+  isStaticMode?: boolean;
 }
 
-export const EncerramentoSection: React.FC<EncerramentoSectionProps> = ({ className }) => {
+export const EncerramentoSection: React.FC<EncerramentoSectionProps> = ({ className, isStaticMode = false }) => {
   const sectionRef = useRef<HTMLElement>(null);
   const markerRef = useRef<HTMLDivElement>(null);
   const headlineRef = useRef<HTMLHeadingElement>(null);
@@ -17,6 +18,14 @@ export const EncerramentoSection: React.FC<EncerramentoSectionProps> = ({ classN
   const actionsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (isStaticMode) {
+      if (markerRef.current) gsap.set(markerRef.current, { opacity: 1, y: 0 });
+      if (headlineRef.current) gsap.set(headlineRef.current, { y: '0%', opacity: 1 });
+      if (bodyRef.current) gsap.set(bodyRef.current, { opacity: 1, y: 0 });
+      if (actionsRef.current) gsap.set(actionsRef.current, { opacity: 1, y: 0 });
+      return;
+    }
+
     const mm = gsap.matchMedia();
 
     // 1. DESKTOP ANIMATION: Typographic masked entrance linked to entry, then stable
@@ -103,7 +112,7 @@ export const EncerramentoSection: React.FC<EncerramentoSectionProps> = ({ classN
     return () => {
       mm.revert();
     };
-  }, []);
+  }, [isStaticMode]);
 
   return (
     <section

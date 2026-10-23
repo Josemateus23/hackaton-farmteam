@@ -27,13 +27,19 @@ export class FrameLoader {
   private scrollDirection: 'down' | 'up' = 'down';
   private listeners: Map<number, Set<() => void>> = new Map();
   private isDestroyed = false;
+  private isMobile: boolean;
 
-  constructor(frames: FrameItem[]) {
+  constructor(frames: FrameItem[], isMobile = false) {
     this.frames = frames;
+    this.isMobile = isMobile;
     this.maxConcurrency = narrativeConfig.cache.maxConcurrency;
     this.maxCacheSize = narrativeConfig.cache.maxCacheSize;
     this.prefetchAhead = narrativeConfig.cache.prefetchAhead;
     this.prefetchBehind = narrativeConfig.cache.prefetchBehind;
+  }
+
+  public setIsMobile(isMobile: boolean) {
+    this.isMobile = isMobile;
   }
 
   /**
@@ -289,12 +295,20 @@ export class FrameLoader {
       }
     };
 
+    const targetUrl = (this.isMobile && frameItem.mobileUrl) ? frameItem.mobileUrl : frameItem.url;
+    let didFallback = false;
+
     img.onerror = (err) => {
+      if (!didFallback && targetUrl !== frameItem.url) {
+        didFallback = true;
+        img.src = frameItem.url;
+        return;
+      }
       task.reject(err);
       finalize();
     };
 
-    img.src = frameItem.url;
+    img.src = targetUrl;
   }
 
   private handleImageLoaded(index: number, img: HTMLImageElement, task: LoadTask) {

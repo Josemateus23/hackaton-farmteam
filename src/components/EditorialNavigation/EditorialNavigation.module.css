@@ -1,0 +1,263 @@
+/* ==========================================================================
+   Editorial Navigation Module Stylesheet - Farm Team V3 Awwwards
+   Clean, authentic editorial graphic novel header & chapter index
+   ========================================================================== */
+
+.navHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(244, 227, 203, 0.94);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border);
+  transition: transform var(--transition-normal), background-color var(--transition-fast);
+}
+
+.navContainer {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0.65rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+/* Brand area */
+.brandGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: var(--color-ink);
+}
+
+.brandLogoMark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  border-radius: 2px;
+  line-height: 1;
+}
+
+.brandText {
+  display: flex;
+  flex-direction: column;
+}
+
+.brandTitle {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-ink);
+  line-height: 1.1;
+}
+
+.brandSub {
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-ink-subtle);
+}
+
+/* Desktop Chapters Index */
+.chaptersList {
+  display: none;
+  list-style: none;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+@media (min-width: 1024px) {
+  .chaptersList {
+    display: flex;
+  }
+}
+
+.chapterItem {
+  position: relative;
+}
+
+.chapterLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 3px;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--color-ink-muted);
+  text-decoration: none;
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.chapterLink:hover {
+  color: var(--color-ink);
+  background-color: rgba(24, 24, 24, 0.05);
+}
+
+.chapterLinkActive {
+  color: var(--color-ink);
+  background-color: rgba(24, 24, 24, 0.07);
+  font-weight: 700;
+}
+
+.chapterNum {
+  font-size: 0.6875rem;
+  color: var(--color-red);
+  font-weight: 700;
+}
+
+/* Controls Area (Right) */
+.controlsGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Toggle: "Ler sem animações" / "Modo estático" */
+.staticToggleBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.85rem;
+  background-color: var(--color-paper-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--color-ink);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.staticToggleBtn:hover {
+  border-color: var(--color-border-strong);
+  background-color: #f7ede0;
+}
+
+.staticToggleBtnActive {
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+  border-color: var(--color-ink);
+}
+
+.staticToggleDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--color-blue);
+  transition: background-color var(--transition-fast);
+}
+
+.staticToggleBtnActive .staticToggleDot {
+  background-color: #5cf49e;
+}
+
+/* Mobile Menu Button */
+.mobileMenuBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  color: var(--color-ink);
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .mobileMenuBtn {
+    display: none;
+  }
+}
+
+/* Mobile Drawer */
+.mobileDrawer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--color-paper);
+  border-bottom: 2px solid var(--color-ink);
+  box-shadow: 0 16px 36px rgba(24, 24, 24, 0.15);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  animation: slideDown 200ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobileChapterList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mobileChapterLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-radius: 3px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-paper-alt);
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.mobileChapterLink:active,
+.mobileChapterLinkActive {
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+}
+
+.mobileChapterLinkActive .chapterNum {
+  color: var(--color-paper);
+}
+
+/* Mini Reading Progress Bar under Navigation */
+.navProgressBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: var(--color-red);
+  transition: width 100ms linear;
+}

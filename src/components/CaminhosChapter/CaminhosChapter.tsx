@@ -8,9 +8,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 interface CaminhosChapterProps {
   className?: string;
+  isStaticMode?: boolean;
 }
 
-export const CaminhosChapter: React.FC<CaminhosChapterProps> = ({ className }) => {
+export const CaminhosChapter: React.FC<CaminhosChapterProps> = ({ className, isStaticMode = false }) => {
   const sectionRef = useRef<HTMLElement>(null);
   const pinStageRef = useRef<HTMLDivElement>(null);
 
@@ -23,6 +24,23 @@ export const CaminhosChapter: React.FC<CaminhosChapterProps> = ({ className }) =
   const initiativeSectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const redBand = redBandRef.current;
+    const blackCurtain = blackCurtainRef.current;
+    const frame = stageFrameRef.current;
+    const img = stageImageRef.current;
+    const header = desktopHeaderRef.current;
+    const initiative = initiativeSectionRef.current;
+
+    if (isStaticMode) {
+      gsap.set(redBand, { scaleX: 1, opacity: 0 });
+      gsap.set(blackCurtain, { scaleY: 0 });
+      gsap.set(frame, { opacity: 1, y: 0 });
+      gsap.set(img, { scale: 1.0 });
+      gsap.set(header, { opacity: 1, y: 0 });
+      gsap.set(initiative, { opacity: 1, y: 0 });
+      return;
+    }
+
     const mm = gsap.matchMedia();
 
     // 1. DESKTOP SCENE (Pinned scroll narrative)
@@ -31,18 +49,11 @@ export const CaminhosChapter: React.FC<CaminhosChapterProps> = ({ className }) =
       const stage = pinStageRef.current;
       if (!section || !stage) return;
 
-      const redBand = redBandRef.current;
-      const blackCurtain = blackCurtainRef.current;
-      const frame = stageFrameRef.current;
-      const img = stageImageRef.current;
-      const header = desktopHeaderRef.current;
-      const initiative = initiativeSectionRef.current;
-
       // Initial States
       gsap.set(redBand, { scaleX: 0, opacity: 1 });
       gsap.set(blackCurtain, { scaleY: 0 });
       gsap.set(frame, { opacity: 0, y: 25 });
-      gsap.set(img, { scale: 1.05 });
+      gsap.set(img, { scale: 1.0 });
       gsap.set(header, { opacity: 0, y: 30 });
       gsap.set(initiative, { opacity: 0, y: 25 });
 
@@ -92,7 +103,7 @@ export const CaminhosChapter: React.FC<CaminhosChapterProps> = ({ className }) =
     return () => {
       mm.revert();
     };
-  }, []);
+  }, [isStaticMode]);
 
   return (
     <section
@@ -118,8 +129,8 @@ export const CaminhosChapter: React.FC<CaminhosChapterProps> = ({ className }) =
         </div>
 
         <div className={styles.container}>
-          {/* Mobile Header (displayed on mobile/tablets above the illustration) */}
-          <header className={styles.mobileHeader}>
+          {/* Unified Chapter Header positioned cleanly above the stage frame without overlapping art */}
+          <header ref={desktopHeaderRef} className={styles.chapterHeader}>
             <div className={styles.markerBadge}>
               <span className={styles.markerDot} aria-hidden="true" />
               <span className={styles.markerText}>03 / CAMINHOS PARA COMEÇAR</span>
@@ -145,17 +156,6 @@ export const CaminhosChapter: React.FC<CaminhosChapterProps> = ({ className }) =
 
             {/* Image Wrapper */}
             <div className={styles.imageWrapper}>
-              {/* Desktop-only Overlay Header positioned in the open light space on the left */}
-              <div ref={desktopHeaderRef} className={styles.desktopOverlayHeader}>
-                <div className={styles.markerBadge}>
-                  <span className={styles.markerDot} aria-hidden="true" />
-                  <span className={styles.markerText}>03 / CAMINHOS PARA COMEÇAR</span>
-                </div>
-                <h2 className={styles.desktopHeadline}>
-                  Criar também se aprende em comunidade.
-                </h2>
-              </div>
-
               {/* Complete, uncropped illustration preserving all 3 characters and laptop */}
               <img
                 ref={stageImageRef}

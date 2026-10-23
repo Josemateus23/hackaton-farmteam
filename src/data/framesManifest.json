@@ -4,1458 +4,1945 @@
     "width": 1920,
     "height": 1080
   },
+  "mobileDimensions": {
+    "width": 960,
+    "height": 540
+  },
   "format": "webp",
   "zeroPadding": 4,
   "firstFrameIndex": 1,
   "lastFrameIndex": 241,
   "baseDir": "public/frames/landinghero/frames",
   "publicUrlPrefix": "/frames/landinghero/frames",
+  "mobileUrlPrefix": "/frames/landinghero/mobile",
   "frames": [
     {
       "index": 1,
       "filename": "landinghero_0001.webp",
       "url": "/frames/landinghero/frames/landinghero_0001.webp",
-      "sizeBytes": 509778
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0001.webp",
+      "sizeBytes": 509778,
+      "mobileSizeBytes": 101126
     },
     {
       "index": 2,
       "filename": "landinghero_0002.webp",
       "url": "/frames/landinghero/frames/landinghero_0002.webp",
-      "sizeBytes": 509778
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0002.webp",
+      "sizeBytes": 509778,
+      "mobileSizeBytes": 101126
     },
     {
       "index": 3,
       "filename": "landinghero_0003.webp",
       "url": "/frames/landinghero/frames/landinghero_0003.webp",
-      "sizeBytes": 513700
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0003.webp",
+      "sizeBytes": 513700,
+      "mobileSizeBytes": 101202
     },
     {
       "index": 4,
       "filename": "landinghero_0004.webp",
       "url": "/frames/landinghero/frames/landinghero_0004.webp",
-      "sizeBytes": 512046
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0004.webp",
+      "sizeBytes": 512046,
+      "mobileSizeBytes": 101386
     },
     {
       "index": 5,
       "filename": "landinghero_0005.webp",
       "url": "/frames/landinghero/frames/landinghero_0005.webp",
-      "sizeBytes": 512046
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0005.webp",
+      "sizeBytes": 512046,
+      "mobileSizeBytes": 101386
     },
     {
       "index": 6,
       "filename": "landinghero_0006.webp",
       "url": "/frames/landinghero/frames/landinghero_0006.webp",
-      "sizeBytes": 513332
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0006.webp",
+      "sizeBytes": 513332,
+      "mobileSizeBytes": 101256
     },
     {
       "index": 7,
       "filename": "landinghero_0007.webp",
       "url": "/frames/landinghero/frames/landinghero_0007.webp",
-      "sizeBytes": 514426
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0007.webp",
+      "sizeBytes": 514426,
+      "mobileSizeBytes": 101342
     },
     {
       "index": 8,
       "filename": "landinghero_0008.webp",
       "url": "/frames/landinghero/frames/landinghero_0008.webp",
-      "sizeBytes": 514780
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0008.webp",
+      "sizeBytes": 514780,
+      "mobileSizeBytes": 101410
     },
     {
       "index": 9,
       "filename": "landinghero_0009.webp",
       "url": "/frames/landinghero/frames/landinghero_0009.webp",
-      "sizeBytes": 510664
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0009.webp",
+      "sizeBytes": 510664,
+      "mobileSizeBytes": 101104
     },
     {
       "index": 10,
       "filename": "landinghero_0010.webp",
       "url": "/frames/landinghero/frames/landinghero_0010.webp",
-      "sizeBytes": 506170
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0010.webp",
+      "sizeBytes": 506170,
+      "mobileSizeBytes": 100392
     },
     {
       "index": 11,
       "filename": "landinghero_0011.webp",
       "url": "/frames/landinghero/frames/landinghero_0011.webp",
-      "sizeBytes": 506170
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0011.webp",
+      "sizeBytes": 506170,
+      "mobileSizeBytes": 100392
     },
     {
       "index": 12,
       "filename": "landinghero_0012.webp",
       "url": "/frames/landinghero/frames/landinghero_0012.webp",
-      "sizeBytes": 507774
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0012.webp",
+      "sizeBytes": 507774,
+      "mobileSizeBytes": 100628
     },
     {
       "index": 13,
       "filename": "landinghero_0013.webp",
       "url": "/frames/landinghero/frames/landinghero_0013.webp",
-      "sizeBytes": 489600
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0013.webp",
+      "sizeBytes": 489600,
+      "mobileSizeBytes": 99302
     },
     {
       "index": 14,
       "filename": "landinghero_0014.webp",
       "url": "/frames/landinghero/frames/landinghero_0014.webp",
-      "sizeBytes": 489600
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0014.webp",
+      "sizeBytes": 489600,
+      "mobileSizeBytes": 99302
     },
     {
       "index": 15,
       "filename": "landinghero_0015.webp",
       "url": "/frames/landinghero/frames/landinghero_0015.webp",
-      "sizeBytes": 483074
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0015.webp",
+      "sizeBytes": 483074,
+      "mobileSizeBytes": 98502
     },
     {
       "index": 16,
       "filename": "landinghero_0016.webp",
       "url": "/frames/landinghero/frames/landinghero_0016.webp",
-      "sizeBytes": 497054
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0016.webp",
+      "sizeBytes": 497054,
+      "mobileSizeBytes": 99172
     },
     {
       "index": 17,
       "filename": "landinghero_0017.webp",
       "url": "/frames/landinghero/frames/landinghero_0017.webp",
-      "sizeBytes": 475714
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0017.webp",
+      "sizeBytes": 475714,
+      "mobileSizeBytes": 97656
     },
     {
       "index": 18,
       "filename": "landinghero_0018.webp",
       "url": "/frames/landinghero/frames/landinghero_0018.webp",
-      "sizeBytes": 467592
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0018.webp",
+      "sizeBytes": 467592,
+      "mobileSizeBytes": 96640
     },
     {
       "index": 19,
       "filename": "landinghero_0019.webp",
       "url": "/frames/landinghero/frames/landinghero_0019.webp",
-      "sizeBytes": 468536
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0019.webp",
+      "sizeBytes": 468536,
+      "mobileSizeBytes": 96788
     },
     {
       "index": 20,
       "filename": "landinghero_0020.webp",
       "url": "/frames/landinghero/frames/landinghero_0020.webp",
-      "sizeBytes": 481496
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0020.webp",
+      "sizeBytes": 481496,
+      "mobileSizeBytes": 96728
     },
     {
       "index": 21,
       "filename": "landinghero_0021.webp",
       "url": "/frames/landinghero/frames/landinghero_0021.webp",
-      "sizeBytes": 464784
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0021.webp",
+      "sizeBytes": 464784,
+      "mobileSizeBytes": 96788
     },
     {
       "index": 22,
       "filename": "landinghero_0022.webp",
       "url": "/frames/landinghero/frames/landinghero_0022.webp",
-      "sizeBytes": 461092
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0022.webp",
+      "sizeBytes": 461092,
+      "mobileSizeBytes": 96224
     },
     {
       "index": 23,
       "filename": "landinghero_0023.webp",
       "url": "/frames/landinghero/frames/landinghero_0023.webp",
-      "sizeBytes": 457470
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0023.webp",
+      "sizeBytes": 457470,
+      "mobileSizeBytes": 95632
     },
     {
       "index": 24,
       "filename": "landinghero_0024.webp",
       "url": "/frames/landinghero/frames/landinghero_0024.webp",
-      "sizeBytes": 468384
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0024.webp",
+      "sizeBytes": 468384,
+      "mobileSizeBytes": 95738
     },
     {
       "index": 25,
       "filename": "landinghero_0025.webp",
       "url": "/frames/landinghero/frames/landinghero_0025.webp",
-      "sizeBytes": 451336
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0025.webp",
+      "sizeBytes": 451336,
+      "mobileSizeBytes": 94932
     },
     {
       "index": 26,
       "filename": "landinghero_0026.webp",
       "url": "/frames/landinghero/frames/landinghero_0026.webp",
-      "sizeBytes": 443970
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0026.webp",
+      "sizeBytes": 443970,
+      "mobileSizeBytes": 93720
     },
     {
       "index": 27,
       "filename": "landinghero_0027.webp",
       "url": "/frames/landinghero/frames/landinghero_0027.webp",
-      "sizeBytes": 441142
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0027.webp",
+      "sizeBytes": 441142,
+      "mobileSizeBytes": 93876
     },
     {
       "index": 28,
       "filename": "landinghero_0028.webp",
       "url": "/frames/landinghero/frames/landinghero_0028.webp",
-      "sizeBytes": 456390
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0028.webp",
+      "sizeBytes": 456390,
+      "mobileSizeBytes": 94112
     },
     {
       "index": 29,
       "filename": "landinghero_0029.webp",
       "url": "/frames/landinghero/frames/landinghero_0029.webp",
-      "sizeBytes": 444178
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0029.webp",
+      "sizeBytes": 444178,
+      "mobileSizeBytes": 93906
     },
     {
       "index": 30,
       "filename": "landinghero_0030.webp",
       "url": "/frames/landinghero/frames/landinghero_0030.webp",
-      "sizeBytes": 442012
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0030.webp",
+      "sizeBytes": 442012,
+      "mobileSizeBytes": 93968
     },
     {
       "index": 31,
       "filename": "landinghero_0031.webp",
       "url": "/frames/landinghero/frames/landinghero_0031.webp",
-      "sizeBytes": 448176
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0031.webp",
+      "sizeBytes": 448176,
+      "mobileSizeBytes": 93304
     },
     {
       "index": 32,
       "filename": "landinghero_0032.webp",
       "url": "/frames/landinghero/frames/landinghero_0032.webp",
-      "sizeBytes": 448176
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0032.webp",
+      "sizeBytes": 448176,
+      "mobileSizeBytes": 93304
     },
     {
       "index": 33,
       "filename": "landinghero_0033.webp",
       "url": "/frames/landinghero/frames/landinghero_0033.webp",
-      "sizeBytes": 435872
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0033.webp",
+      "sizeBytes": 435872,
+      "mobileSizeBytes": 92758
     },
     {
       "index": 34,
       "filename": "landinghero_0034.webp",
       "url": "/frames/landinghero/frames/landinghero_0034.webp",
-      "sizeBytes": 425098
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0034.webp",
+      "sizeBytes": 425098,
+      "mobileSizeBytes": 91158
     },
     {
       "index": 35,
       "filename": "landinghero_0035.webp",
       "url": "/frames/landinghero/frames/landinghero_0035.webp",
-      "sizeBytes": 425098
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0035.webp",
+      "sizeBytes": 425098,
+      "mobileSizeBytes": 91158
     },
     {
       "index": 36,
       "filename": "landinghero_0036.webp",
       "url": "/frames/landinghero/frames/landinghero_0036.webp",
-      "sizeBytes": 437720
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0036.webp",
+      "sizeBytes": 437720,
+      "mobileSizeBytes": 92350
     },
     {
       "index": 37,
       "filename": "landinghero_0037.webp",
       "url": "/frames/landinghero/frames/landinghero_0037.webp",
-      "sizeBytes": 432516
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0037.webp",
+      "sizeBytes": 432516,
+      "mobileSizeBytes": 92460
     },
     {
       "index": 38,
       "filename": "landinghero_0038.webp",
       "url": "/frames/landinghero/frames/landinghero_0038.webp",
-      "sizeBytes": 432516
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0038.webp",
+      "sizeBytes": 432516,
+      "mobileSizeBytes": 92460
     },
     {
       "index": 39,
       "filename": "landinghero_0039.webp",
       "url": "/frames/landinghero/frames/landinghero_0039.webp",
-      "sizeBytes": 425976
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0039.webp",
+      "sizeBytes": 425976,
+      "mobileSizeBytes": 92212
     },
     {
       "index": 40,
       "filename": "landinghero_0040.webp",
       "url": "/frames/landinghero/frames/landinghero_0040.webp",
-      "sizeBytes": 419530
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0040.webp",
+      "sizeBytes": 419530,
+      "mobileSizeBytes": 89652
     },
     {
       "index": 41,
       "filename": "landinghero_0041.webp",
       "url": "/frames/landinghero/frames/landinghero_0041.webp",
-      "sizeBytes": 419530
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0041.webp",
+      "sizeBytes": 419530,
+      "mobileSizeBytes": 89652
     },
     {
       "index": 42,
       "filename": "landinghero_0042.webp",
       "url": "/frames/landinghero/frames/landinghero_0042.webp",
-      "sizeBytes": 409768
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0042.webp",
+      "sizeBytes": 409768,
+      "mobileSizeBytes": 88534
     },
     {
       "index": 43,
       "filename": "landinghero_0043.webp",
       "url": "/frames/landinghero/frames/landinghero_0043.webp",
-      "sizeBytes": 423392
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0043.webp",
+      "sizeBytes": 423392,
+      "mobileSizeBytes": 90122
     },
     {
       "index": 44,
       "filename": "landinghero_0044.webp",
       "url": "/frames/landinghero/frames/landinghero_0044.webp",
-      "sizeBytes": 423392
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0044.webp",
+      "sizeBytes": 423392,
+      "mobileSizeBytes": 90122
     },
     {
       "index": 45,
       "filename": "landinghero_0045.webp",
       "url": "/frames/landinghero/frames/landinghero_0045.webp",
-      "sizeBytes": 416622
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0045.webp",
+      "sizeBytes": 416622,
+      "mobileSizeBytes": 90346
     },
     {
       "index": 46,
       "filename": "landinghero_0046.webp",
       "url": "/frames/landinghero/frames/landinghero_0046.webp",
-      "sizeBytes": 414616
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0046.webp",
+      "sizeBytes": 414616,
+      "mobileSizeBytes": 90298
     },
     {
       "index": 47,
       "filename": "landinghero_0047.webp",
       "url": "/frames/landinghero/frames/landinghero_0047.webp",
-      "sizeBytes": 414616
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0047.webp",
+      "sizeBytes": 414616,
+      "mobileSizeBytes": 90298
     },
     {
       "index": 48,
       "filename": "landinghero_0048.webp",
       "url": "/frames/landinghero/frames/landinghero_0048.webp",
-      "sizeBytes": 425088
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0048.webp",
+      "sizeBytes": 425088,
+      "mobileSizeBytes": 89638
     },
     {
       "index": 49,
       "filename": "landinghero_0049.webp",
       "url": "/frames/landinghero/frames/landinghero_0049.webp",
-      "sizeBytes": 398912
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0049.webp",
+      "sizeBytes": 398912,
+      "mobileSizeBytes": 85882
     },
     {
       "index": 50,
       "filename": "landinghero_0050.webp",
       "url": "/frames/landinghero/frames/landinghero_0050.webp",
-      "sizeBytes": 398912
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0050.webp",
+      "sizeBytes": 398912,
+      "mobileSizeBytes": 85882
     },
     {
       "index": 51,
       "filename": "landinghero_0051.webp",
       "url": "/frames/landinghero/frames/landinghero_0051.webp",
-      "sizeBytes": 396142
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0051.webp",
+      "sizeBytes": 396142,
+      "mobileSizeBytes": 86402
     },
     {
       "index": 52,
       "filename": "landinghero_0052.webp",
       "url": "/frames/landinghero/frames/landinghero_0052.webp",
-      "sizeBytes": 405348
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0052.webp",
+      "sizeBytes": 405348,
+      "mobileSizeBytes": 88432
     },
     {
       "index": 53,
       "filename": "landinghero_0053.webp",
       "url": "/frames/landinghero/frames/landinghero_0053.webp",
-      "sizeBytes": 405348
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0053.webp",
+      "sizeBytes": 405348,
+      "mobileSizeBytes": 88432
     },
     {
       "index": 54,
       "filename": "landinghero_0054.webp",
       "url": "/frames/landinghero/frames/landinghero_0054.webp",
-      "sizeBytes": 419972
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0054.webp",
+      "sizeBytes": 419972,
+      "mobileSizeBytes": 90502
     },
     {
       "index": 55,
       "filename": "landinghero_0055.webp",
       "url": "/frames/landinghero/frames/landinghero_0055.webp",
-      "sizeBytes": 411570
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0055.webp",
+      "sizeBytes": 411570,
+      "mobileSizeBytes": 87138
     },
     {
       "index": 56,
       "filename": "landinghero_0056.webp",
       "url": "/frames/landinghero/frames/landinghero_0056.webp",
-      "sizeBytes": 411570
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0056.webp",
+      "sizeBytes": 411570,
+      "mobileSizeBytes": 87138
     },
     {
       "index": 57,
       "filename": "landinghero_0057.webp",
       "url": "/frames/landinghero/frames/landinghero_0057.webp",
-      "sizeBytes": 389782
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0057.webp",
+      "sizeBytes": 389782,
+      "mobileSizeBytes": 84900
     },
     {
       "index": 58,
       "filename": "landinghero_0058.webp",
       "url": "/frames/landinghero/frames/landinghero_0058.webp",
-      "sizeBytes": 386206
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0058.webp",
+      "sizeBytes": 386206,
+      "mobileSizeBytes": 84796
     },
     {
       "index": 59,
       "filename": "landinghero_0059.webp",
       "url": "/frames/landinghero/frames/landinghero_0059.webp",
-      "sizeBytes": 386206
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0059.webp",
+      "sizeBytes": 386206,
+      "mobileSizeBytes": 84796
     },
     {
       "index": 60,
       "filename": "landinghero_0060.webp",
       "url": "/frames/landinghero/frames/landinghero_0060.webp",
-      "sizeBytes": 403214
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0060.webp",
+      "sizeBytes": 403214,
+      "mobileSizeBytes": 85660
     },
     {
       "index": 61,
       "filename": "landinghero_0061.webp",
       "url": "/frames/landinghero/frames/landinghero_0061.webp",
-      "sizeBytes": 394654
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0061.webp",
+      "sizeBytes": 394654,
+      "mobileSizeBytes": 87204
     },
     {
       "index": 62,
       "filename": "landinghero_0062.webp",
       "url": "/frames/landinghero/frames/landinghero_0062.webp",
-      "sizeBytes": 412820
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0062.webp",
+      "sizeBytes": 412820,
+      "mobileSizeBytes": 89736
     },
     {
       "index": 63,
       "filename": "landinghero_0063.webp",
       "url": "/frames/landinghero/frames/landinghero_0063.webp",
-      "sizeBytes": 394984
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0063.webp",
+      "sizeBytes": 394984,
+      "mobileSizeBytes": 87256
     },
     {
       "index": 64,
       "filename": "landinghero_0064.webp",
       "url": "/frames/landinghero/frames/landinghero_0064.webp",
-      "sizeBytes": 399542
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0064.webp",
+      "sizeBytes": 399542,
+      "mobileSizeBytes": 85764
     },
     {
       "index": 65,
       "filename": "landinghero_0065.webp",
       "url": "/frames/landinghero/frames/landinghero_0065.webp",
-      "sizeBytes": 379304
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0065.webp",
+      "sizeBytes": 379304,
+      "mobileSizeBytes": 83056
     },
     {
       "index": 66,
       "filename": "landinghero_0066.webp",
       "url": "/frames/landinghero/frames/landinghero_0066.webp",
-      "sizeBytes": 379196
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0066.webp",
+      "sizeBytes": 379196,
+      "mobileSizeBytes": 83200
     },
     {
       "index": 67,
       "filename": "landinghero_0067.webp",
       "url": "/frames/landinghero/frames/landinghero_0067.webp",
-      "sizeBytes": 380282
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0067.webp",
+      "sizeBytes": 380282,
+      "mobileSizeBytes": 83816
     },
     {
       "index": 68,
       "filename": "landinghero_0068.webp",
       "url": "/frames/landinghero/frames/landinghero_0068.webp",
-      "sizeBytes": 391072
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0068.webp",
+      "sizeBytes": 391072,
+      "mobileSizeBytes": 84740
     },
     {
       "index": 69,
       "filename": "landinghero_0069.webp",
       "url": "/frames/landinghero/frames/landinghero_0069.webp",
-      "sizeBytes": 390080
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0069.webp",
+      "sizeBytes": 390080,
+      "mobileSizeBytes": 86142
     },
     {
       "index": 70,
       "filename": "landinghero_0070.webp",
       "url": "/frames/landinghero/frames/landinghero_0070.webp",
-      "sizeBytes": 404754
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0070.webp",
+      "sizeBytes": 404754,
+      "mobileSizeBytes": 89262
     },
     {
       "index": 71,
       "filename": "landinghero_0071.webp",
       "url": "/frames/landinghero/frames/landinghero_0071.webp",
-      "sizeBytes": 391900
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0071.webp",
+      "sizeBytes": 391900,
+      "mobileSizeBytes": 86638
     },
     {
       "index": 72,
       "filename": "landinghero_0072.webp",
       "url": "/frames/landinghero/frames/landinghero_0072.webp",
-      "sizeBytes": 388910
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0072.webp",
+      "sizeBytes": 388910,
+      "mobileSizeBytes": 84598
     },
     {
       "index": 73,
       "filename": "landinghero_0073.webp",
       "url": "/frames/landinghero/frames/landinghero_0073.webp",
-      "sizeBytes": 373892
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0073.webp",
+      "sizeBytes": 373892,
+      "mobileSizeBytes": 82038
     },
     {
       "index": 74,
       "filename": "landinghero_0074.webp",
       "url": "/frames/landinghero/frames/landinghero_0074.webp",
-      "sizeBytes": 372192
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0074.webp",
+      "sizeBytes": 372192,
+      "mobileSizeBytes": 82650
     },
     {
       "index": 75,
       "filename": "landinghero_0075.webp",
       "url": "/frames/landinghero/frames/landinghero_0075.webp",
-      "sizeBytes": 376464
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0075.webp",
+      "sizeBytes": 376464,
+      "mobileSizeBytes": 83276
     },
     {
       "index": 76,
       "filename": "landinghero_0076.webp",
       "url": "/frames/landinghero/frames/landinghero_0076.webp",
-      "sizeBytes": 375986
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0076.webp",
+      "sizeBytes": 375986,
+      "mobileSizeBytes": 83420
     },
     {
       "index": 77,
       "filename": "landinghero_0077.webp",
       "url": "/frames/landinghero/frames/landinghero_0077.webp",
-      "sizeBytes": 382876
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0077.webp",
+      "sizeBytes": 382876,
+      "mobileSizeBytes": 85100
     },
     {
       "index": 78,
       "filename": "landinghero_0078.webp",
       "url": "/frames/landinghero/frames/landinghero_0078.webp",
-      "sizeBytes": 398146
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0078.webp",
+      "sizeBytes": 398146,
+      "mobileSizeBytes": 89294
     },
     {
       "index": 79,
       "filename": "landinghero_0079.webp",
       "url": "/frames/landinghero/frames/landinghero_0079.webp",
-      "sizeBytes": 379710
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0079.webp",
+      "sizeBytes": 379710,
+      "mobileSizeBytes": 85874
     },
     {
       "index": 80,
       "filename": "landinghero_0080.webp",
       "url": "/frames/landinghero/frames/landinghero_0080.webp",
-      "sizeBytes": 372648
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0080.webp",
+      "sizeBytes": 372648,
+      "mobileSizeBytes": 83632
     },
     {
       "index": 81,
       "filename": "landinghero_0081.webp",
       "url": "/frames/landinghero/frames/landinghero_0081.webp",
-      "sizeBytes": 367790
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0081.webp",
+      "sizeBytes": 367790,
+      "mobileSizeBytes": 81304
     },
     {
       "index": 82,
       "filename": "landinghero_0082.webp",
       "url": "/frames/landinghero/frames/landinghero_0082.webp",
-      "sizeBytes": 363044
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0082.webp",
+      "sizeBytes": 363044,
+      "mobileSizeBytes": 81490
     },
     {
       "index": 83,
       "filename": "landinghero_0083.webp",
       "url": "/frames/landinghero/frames/landinghero_0083.webp",
-      "sizeBytes": 369092
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0083.webp",
+      "sizeBytes": 369092,
+      "mobileSizeBytes": 82860
     },
     {
       "index": 84,
       "filename": "landinghero_0084.webp",
       "url": "/frames/landinghero/frames/landinghero_0084.webp",
-      "sizeBytes": 367218
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0084.webp",
+      "sizeBytes": 367218,
+      "mobileSizeBytes": 83288
     },
     {
       "index": 85,
       "filename": "landinghero_0085.webp",
       "url": "/frames/landinghero/frames/landinghero_0085.webp",
-      "sizeBytes": 369772
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0085.webp",
+      "sizeBytes": 369772,
+      "mobileSizeBytes": 84546
     },
     {
       "index": 86,
       "filename": "landinghero_0086.webp",
       "url": "/frames/landinghero/frames/landinghero_0086.webp",
-      "sizeBytes": 387466
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0086.webp",
+      "sizeBytes": 387466,
+      "mobileSizeBytes": 87950
     },
     {
       "index": 87,
       "filename": "landinghero_0087.webp",
       "url": "/frames/landinghero/frames/landinghero_0087.webp",
-      "sizeBytes": 374364
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0087.webp",
+      "sizeBytes": 374364,
+      "mobileSizeBytes": 84872
     },
     {
       "index": 88,
       "filename": "landinghero_0088.webp",
       "url": "/frames/landinghero/frames/landinghero_0088.webp",
-      "sizeBytes": 366430
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0088.webp",
+      "sizeBytes": 366430,
+      "mobileSizeBytes": 83554
     },
     {
       "index": 89,
       "filename": "landinghero_0089.webp",
       "url": "/frames/landinghero/frames/landinghero_0089.webp",
-      "sizeBytes": 360302
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0089.webp",
+      "sizeBytes": 360302,
+      "mobileSizeBytes": 80644
     },
     {
       "index": 90,
       "filename": "landinghero_0090.webp",
       "url": "/frames/landinghero/frames/landinghero_0090.webp",
-      "sizeBytes": 356802
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0090.webp",
+      "sizeBytes": 356802,
+      "mobileSizeBytes": 80844
     },
     {
       "index": 91,
       "filename": "landinghero_0091.webp",
       "url": "/frames/landinghero/frames/landinghero_0091.webp",
-      "sizeBytes": 357526
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0091.webp",
+      "sizeBytes": 357526,
+      "mobileSizeBytes": 81734
     },
     {
       "index": 92,
       "filename": "landinghero_0092.webp",
       "url": "/frames/landinghero/frames/landinghero_0092.webp",
-      "sizeBytes": 360456
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0092.webp",
+      "sizeBytes": 360456,
+      "mobileSizeBytes": 82438
     },
     {
       "index": 93,
       "filename": "landinghero_0093.webp",
       "url": "/frames/landinghero/frames/landinghero_0093.webp",
-      "sizeBytes": 366660
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0093.webp",
+      "sizeBytes": 366660,
+      "mobileSizeBytes": 83512
     },
     {
       "index": 94,
       "filename": "landinghero_0094.webp",
       "url": "/frames/landinghero/frames/landinghero_0094.webp",
-      "sizeBytes": 377696
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0094.webp",
+      "sizeBytes": 377696,
+      "mobileSizeBytes": 86720
     },
     {
       "index": 95,
       "filename": "landinghero_0095.webp",
       "url": "/frames/landinghero/frames/landinghero_0095.webp",
-      "sizeBytes": 368336
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0095.webp",
+      "sizeBytes": 368336,
+      "mobileSizeBytes": 84180
     },
     {
       "index": 96,
       "filename": "landinghero_0096.webp",
       "url": "/frames/landinghero/frames/landinghero_0096.webp",
-      "sizeBytes": 361788
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0096.webp",
+      "sizeBytes": 361788,
+      "mobileSizeBytes": 83106
     },
     {
       "index": 97,
       "filename": "landinghero_0097.webp",
       "url": "/frames/landinghero/frames/landinghero_0097.webp",
-      "sizeBytes": 355716
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0097.webp",
+      "sizeBytes": 355716,
+      "mobileSizeBytes": 81140
     },
     {
       "index": 98,
       "filename": "landinghero_0098.webp",
       "url": "/frames/landinghero/frames/landinghero_0098.webp",
-      "sizeBytes": 350672
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0098.webp",
+      "sizeBytes": 350672,
+      "mobileSizeBytes": 81424
     },
     {
       "index": 99,
       "filename": "landinghero_0099.webp",
       "url": "/frames/landinghero/frames/landinghero_0099.webp",
-      "sizeBytes": 353910
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0099.webp",
+      "sizeBytes": 353910,
+      "mobileSizeBytes": 81702
     },
     {
       "index": 100,
       "filename": "landinghero_0100.webp",
       "url": "/frames/landinghero/frames/landinghero_0100.webp",
-      "sizeBytes": 359486
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0100.webp",
+      "sizeBytes": 359486,
+      "mobileSizeBytes": 83040
     },
     {
       "index": 101,
       "filename": "landinghero_0101.webp",
       "url": "/frames/landinghero/frames/landinghero_0101.webp",
-      "sizeBytes": 358516
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0101.webp",
+      "sizeBytes": 358516,
+      "mobileSizeBytes": 83836
     },
     {
       "index": 102,
       "filename": "landinghero_0102.webp",
       "url": "/frames/landinghero/frames/landinghero_0102.webp",
-      "sizeBytes": 371724
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0102.webp",
+      "sizeBytes": 371724,
+      "mobileSizeBytes": 86382
     },
     {
       "index": 103,
       "filename": "landinghero_0103.webp",
       "url": "/frames/landinghero/frames/landinghero_0103.webp",
-      "sizeBytes": 359294
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0103.webp",
+      "sizeBytes": 359294,
+      "mobileSizeBytes": 83858
     },
     {
       "index": 104,
       "filename": "landinghero_0104.webp",
       "url": "/frames/landinghero/frames/landinghero_0104.webp",
-      "sizeBytes": 356952
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0104.webp",
+      "sizeBytes": 356952,
+      "mobileSizeBytes": 82904
     },
     {
       "index": 105,
       "filename": "landinghero_0105.webp",
       "url": "/frames/landinghero/frames/landinghero_0105.webp",
-      "sizeBytes": 347198
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0105.webp",
+      "sizeBytes": 347198,
+      "mobileSizeBytes": 80710
     },
     {
       "index": 106,
       "filename": "landinghero_0106.webp",
       "url": "/frames/landinghero/frames/landinghero_0106.webp",
-      "sizeBytes": 349600
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0106.webp",
+      "sizeBytes": 349600,
+      "mobileSizeBytes": 80532
     },
     {
       "index": 107,
       "filename": "landinghero_0107.webp",
       "url": "/frames/landinghero/frames/landinghero_0107.webp",
-      "sizeBytes": 347032
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0107.webp",
+      "sizeBytes": 347032,
+      "mobileSizeBytes": 81666
     },
     {
       "index": 108,
       "filename": "landinghero_0108.webp",
       "url": "/frames/landinghero/frames/landinghero_0108.webp",
-      "sizeBytes": 357040
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0108.webp",
+      "sizeBytes": 357040,
+      "mobileSizeBytes": 82364
     },
     {
       "index": 109,
       "filename": "landinghero_0109.webp",
       "url": "/frames/landinghero/frames/landinghero_0109.webp",
-      "sizeBytes": 349034
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0109.webp",
+      "sizeBytes": 349034,
+      "mobileSizeBytes": 82004
     },
     {
       "index": 110,
       "filename": "landinghero_0110.webp",
       "url": "/frames/landinghero/frames/landinghero_0110.webp",
-      "sizeBytes": 360054
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0110.webp",
+      "sizeBytes": 360054,
+      "mobileSizeBytes": 84790
     },
     {
       "index": 111,
       "filename": "landinghero_0111.webp",
       "url": "/frames/landinghero/frames/landinghero_0111.webp",
-      "sizeBytes": 348710
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0111.webp",
+      "sizeBytes": 348710,
+      "mobileSizeBytes": 82354
     },
     {
       "index": 112,
       "filename": "landinghero_0112.webp",
       "url": "/frames/landinghero/frames/landinghero_0112.webp",
-      "sizeBytes": 354890
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0112.webp",
+      "sizeBytes": 354890,
+      "mobileSizeBytes": 81714
     },
     {
       "index": 113,
       "filename": "landinghero_0113.webp",
       "url": "/frames/landinghero/frames/landinghero_0113.webp",
-      "sizeBytes": 339354
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0113.webp",
+      "sizeBytes": 339354,
+      "mobileSizeBytes": 79774
     },
     {
       "index": 114,
       "filename": "landinghero_0114.webp",
       "url": "/frames/landinghero/frames/landinghero_0114.webp",
-      "sizeBytes": 340670
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0114.webp",
+      "sizeBytes": 340670,
+      "mobileSizeBytes": 79084
     },
     {
       "index": 115,
       "filename": "landinghero_0115.webp",
       "url": "/frames/landinghero/frames/landinghero_0115.webp",
-      "sizeBytes": 338260
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0115.webp",
+      "sizeBytes": 338260,
+      "mobileSizeBytes": 79850
     },
     {
       "index": 116,
       "filename": "landinghero_0116.webp",
       "url": "/frames/landinghero/frames/landinghero_0116.webp",
-      "sizeBytes": 350860
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0116.webp",
+      "sizeBytes": 350860,
+      "mobileSizeBytes": 80412
     },
     {
       "index": 117,
       "filename": "landinghero_0117.webp",
       "url": "/frames/landinghero/frames/landinghero_0117.webp",
-      "sizeBytes": 339188
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0117.webp",
+      "sizeBytes": 339188,
+      "mobileSizeBytes": 80682
     },
     {
       "index": 118,
       "filename": "landinghero_0118.webp",
       "url": "/frames/landinghero/frames/landinghero_0118.webp",
-      "sizeBytes": 338442
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0118.webp",
+      "sizeBytes": 338442,
+      "mobileSizeBytes": 80318
     },
     {
       "index": 119,
       "filename": "landinghero_0119.webp",
       "url": "/frames/landinghero/frames/landinghero_0119.webp",
-      "sizeBytes": 338442
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0119.webp",
+      "sizeBytes": 338442,
+      "mobileSizeBytes": 80318
     },
     {
       "index": 120,
       "filename": "landinghero_0120.webp",
       "url": "/frames/landinghero/frames/landinghero_0120.webp",
-      "sizeBytes": 348978
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0120.webp",
+      "sizeBytes": 348978,
+      "mobileSizeBytes": 80298
     },
     {
       "index": 121,
       "filename": "landinghero_0121.webp",
       "url": "/frames/landinghero/frames/landinghero_0121.webp",
-      "sizeBytes": 333782
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0121.webp",
+      "sizeBytes": 333782,
+      "mobileSizeBytes": 78456
     },
     {
       "index": 122,
       "filename": "landinghero_0122.webp",
       "url": "/frames/landinghero/frames/landinghero_0122.webp",
-      "sizeBytes": 333782
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0122.webp",
+      "sizeBytes": 333782,
+      "mobileSizeBytes": 78456
     },
     {
       "index": 123,
       "filename": "landinghero_0123.webp",
       "url": "/frames/landinghero/frames/landinghero_0123.webp",
-      "sizeBytes": 330342
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0123.webp",
+      "sizeBytes": 330342,
+      "mobileSizeBytes": 79130
     },
     {
       "index": 124,
       "filename": "landinghero_0124.webp",
       "url": "/frames/landinghero/frames/landinghero_0124.webp",
-      "sizeBytes": 331852
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0124.webp",
+      "sizeBytes": 331852,
+      "mobileSizeBytes": 79314
     },
     {
       "index": 125,
       "filename": "landinghero_0125.webp",
       "url": "/frames/landinghero/frames/landinghero_0125.webp",
-      "sizeBytes": 331852
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0125.webp",
+      "sizeBytes": 331852,
+      "mobileSizeBytes": 79314
     },
     {
       "index": 126,
       "filename": "landinghero_0126.webp",
       "url": "/frames/landinghero/frames/landinghero_0126.webp",
-      "sizeBytes": 339238
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0126.webp",
+      "sizeBytes": 339238,
+      "mobileSizeBytes": 80198
     },
     {
       "index": 127,
       "filename": "landinghero_0127.webp",
       "url": "/frames/landinghero/frames/landinghero_0127.webp",
-      "sizeBytes": 343060
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0127.webp",
+      "sizeBytes": 343060,
+      "mobileSizeBytes": 78638
     },
     {
       "index": 128,
       "filename": "landinghero_0128.webp",
       "url": "/frames/landinghero/frames/landinghero_0128.webp",
-      "sizeBytes": 343060
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0128.webp",
+      "sizeBytes": 343060,
+      "mobileSizeBytes": 78638
     },
     {
       "index": 129,
       "filename": "landinghero_0129.webp",
       "url": "/frames/landinghero/frames/landinghero_0129.webp",
-      "sizeBytes": 334084
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0129.webp",
+      "sizeBytes": 334084,
+      "mobileSizeBytes": 77752
     },
     {
       "index": 130,
       "filename": "landinghero_0130.webp",
       "url": "/frames/landinghero/frames/landinghero_0130.webp",
-      "sizeBytes": 320258
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0130.webp",
+      "sizeBytes": 320258,
+      "mobileSizeBytes": 76136
     },
     {
       "index": 131,
       "filename": "landinghero_0131.webp",
       "url": "/frames/landinghero/frames/landinghero_0131.webp",
-      "sizeBytes": 320258
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0131.webp",
+      "sizeBytes": 320258,
+      "mobileSizeBytes": 76136
     },
     {
       "index": 132,
       "filename": "landinghero_0132.webp",
       "url": "/frames/landinghero/frames/landinghero_0132.webp",
-      "sizeBytes": 325656
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0132.webp",
+      "sizeBytes": 325656,
+      "mobileSizeBytes": 77608
     },
     {
       "index": 133,
       "filename": "landinghero_0133.webp",
       "url": "/frames/landinghero/frames/landinghero_0133.webp",
-      "sizeBytes": 327048
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0133.webp",
+      "sizeBytes": 327048,
+      "mobileSizeBytes": 78206
     },
     {
       "index": 134,
       "filename": "landinghero_0134.webp",
       "url": "/frames/landinghero/frames/landinghero_0134.webp",
-      "sizeBytes": 327048
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0134.webp",
+      "sizeBytes": 327048,
+      "mobileSizeBytes": 78206
     },
     {
       "index": 135,
       "filename": "landinghero_0135.webp",
       "url": "/frames/landinghero/frames/landinghero_0135.webp",
-      "sizeBytes": 321206
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0135.webp",
+      "sizeBytes": 321206,
+      "mobileSizeBytes": 77182
     },
     {
       "index": 136,
       "filename": "landinghero_0136.webp",
       "url": "/frames/landinghero/frames/landinghero_0136.webp",
-      "sizeBytes": 318120
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0136.webp",
+      "sizeBytes": 318120,
+      "mobileSizeBytes": 75760
     },
     {
       "index": 137,
       "filename": "landinghero_0137.webp",
       "url": "/frames/landinghero/frames/landinghero_0137.webp",
-      "sizeBytes": 318120
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0137.webp",
+      "sizeBytes": 318120,
+      "mobileSizeBytes": 75760
     },
     {
       "index": 138,
       "filename": "landinghero_0138.webp",
       "url": "/frames/landinghero/frames/landinghero_0138.webp",
-      "sizeBytes": 318014
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0138.webp",
+      "sizeBytes": 318014,
+      "mobileSizeBytes": 75712
     },
     {
       "index": 139,
       "filename": "landinghero_0139.webp",
       "url": "/frames/landinghero/frames/landinghero_0139.webp",
-      "sizeBytes": 330112
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0139.webp",
+      "sizeBytes": 330112,
+      "mobileSizeBytes": 76314
     },
     {
       "index": 140,
       "filename": "landinghero_0140.webp",
       "url": "/frames/landinghero/frames/landinghero_0140.webp",
-      "sizeBytes": 330112
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0140.webp",
+      "sizeBytes": 330112,
+      "mobileSizeBytes": 76314
     },
     {
       "index": 141,
       "filename": "landinghero_0141.webp",
       "url": "/frames/landinghero/frames/landinghero_0141.webp",
-      "sizeBytes": 316016
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0141.webp",
+      "sizeBytes": 316016,
+      "mobileSizeBytes": 75500
     },
     {
       "index": 142,
       "filename": "landinghero_0142.webp",
       "url": "/frames/landinghero/frames/landinghero_0142.webp",
-      "sizeBytes": 316512
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0142.webp",
+      "sizeBytes": 316512,
+      "mobileSizeBytes": 75760
     },
     {
       "index": 143,
       "filename": "landinghero_0143.webp",
       "url": "/frames/landinghero/frames/landinghero_0143.webp",
-      "sizeBytes": 316512
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0143.webp",
+      "sizeBytes": 316512,
+      "mobileSizeBytes": 75760
     },
     {
       "index": 144,
       "filename": "landinghero_0144.webp",
       "url": "/frames/landinghero/frames/landinghero_0144.webp",
-      "sizeBytes": 329320
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0144.webp",
+      "sizeBytes": 329320,
+      "mobileSizeBytes": 76712
     },
     {
       "index": 145,
       "filename": "landinghero_0145.webp",
       "url": "/frames/landinghero/frames/landinghero_0145.webp",
-      "sizeBytes": 313808
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0145.webp",
+      "sizeBytes": 313808,
+      "mobileSizeBytes": 74726
     },
     {
       "index": 146,
       "filename": "landinghero_0146.webp",
       "url": "/frames/landinghero/frames/landinghero_0146.webp",
-      "sizeBytes": 313808
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0146.webp",
+      "sizeBytes": 313808,
+      "mobileSizeBytes": 74726
     },
     {
       "index": 147,
       "filename": "landinghero_0147.webp",
       "url": "/frames/landinghero/frames/landinghero_0147.webp",
-      "sizeBytes": 311342
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0147.webp",
+      "sizeBytes": 311342,
+      "mobileSizeBytes": 74718
     },
     {
       "index": 148,
       "filename": "landinghero_0148.webp",
       "url": "/frames/landinghero/frames/landinghero_0148.webp",
-      "sizeBytes": 313356
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0148.webp",
+      "sizeBytes": 313356,
+      "mobileSizeBytes": 75222
     },
     {
       "index": 149,
       "filename": "landinghero_0149.webp",
       "url": "/frames/landinghero/frames/landinghero_0149.webp",
-      "sizeBytes": 313356
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0149.webp",
+      "sizeBytes": 313356,
+      "mobileSizeBytes": 75222
     },
     {
       "index": 150,
       "filename": "landinghero_0150.webp",
       "url": "/frames/landinghero/frames/landinghero_0150.webp",
-      "sizeBytes": 318372
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0150.webp",
+      "sizeBytes": 318372,
+      "mobileSizeBytes": 76252
     },
     {
       "index": 151,
       "filename": "landinghero_0151.webp",
       "url": "/frames/landinghero/frames/landinghero_0151.webp",
-      "sizeBytes": 329894
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0151.webp",
+      "sizeBytes": 329894,
+      "mobileSizeBytes": 76660
     },
     {
       "index": 152,
       "filename": "landinghero_0152.webp",
       "url": "/frames/landinghero/frames/landinghero_0152.webp",
-      "sizeBytes": 329894
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0152.webp",
+      "sizeBytes": 329894,
+      "mobileSizeBytes": 76660
     },
     {
       "index": 153,
       "filename": "landinghero_0153.webp",
       "url": "/frames/landinghero/frames/landinghero_0153.webp",
-      "sizeBytes": 315690
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0153.webp",
+      "sizeBytes": 315690,
+      "mobileSizeBytes": 75494
     },
     {
       "index": 154,
       "filename": "landinghero_0154.webp",
       "url": "/frames/landinghero/frames/landinghero_0154.webp",
-      "sizeBytes": 314436
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0154.webp",
+      "sizeBytes": 314436,
+      "mobileSizeBytes": 75802
     },
     {
       "index": 155,
       "filename": "landinghero_0155.webp",
       "url": "/frames/landinghero/frames/landinghero_0155.webp",
-      "sizeBytes": 314436
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0155.webp",
+      "sizeBytes": 314436,
+      "mobileSizeBytes": 75802
     },
     {
       "index": 156,
       "filename": "landinghero_0156.webp",
       "url": "/frames/landinghero/frames/landinghero_0156.webp",
-      "sizeBytes": 331958
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0156.webp",
+      "sizeBytes": 331958,
+      "mobileSizeBytes": 77216
     },
     {
       "index": 157,
       "filename": "landinghero_0157.webp",
       "url": "/frames/landinghero/frames/landinghero_0157.webp",
-      "sizeBytes": 323510
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0157.webp",
+      "sizeBytes": 323510,
+      "mobileSizeBytes": 77474
     },
     {
       "index": 158,
       "filename": "landinghero_0158.webp",
       "url": "/frames/landinghero/frames/landinghero_0158.webp",
-      "sizeBytes": 323510
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0158.webp",
+      "sizeBytes": 323510,
+      "mobileSizeBytes": 77474
     },
     {
       "index": 159,
       "filename": "landinghero_0159.webp",
       "url": "/frames/landinghero/frames/landinghero_0159.webp",
-      "sizeBytes": 321180
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0159.webp",
+      "sizeBytes": 321180,
+      "mobileSizeBytes": 77364
     },
     {
       "index": 160,
       "filename": "landinghero_0160.webp",
       "url": "/frames/landinghero/frames/landinghero_0160.webp",
-      "sizeBytes": 320914
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0160.webp",
+      "sizeBytes": 320914,
+      "mobileSizeBytes": 77468
     },
     {
       "index": 161,
       "filename": "landinghero_0161.webp",
       "url": "/frames/landinghero/frames/landinghero_0161.webp",
-      "sizeBytes": 320914
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0161.webp",
+      "sizeBytes": 320914,
+      "mobileSizeBytes": 77468
     },
     {
       "index": 162,
       "filename": "landinghero_0162.webp",
       "url": "/frames/landinghero/frames/landinghero_0162.webp",
-      "sizeBytes": 323084
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0162.webp",
+      "sizeBytes": 323084,
+      "mobileSizeBytes": 77638
     },
     {
       "index": 163,
       "filename": "landinghero_0163.webp",
       "url": "/frames/landinghero/frames/landinghero_0163.webp",
-      "sizeBytes": 337684
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0163.webp",
+      "sizeBytes": 337684,
+      "mobileSizeBytes": 79380
     },
     {
       "index": 164,
       "filename": "landinghero_0164.webp",
       "url": "/frames/landinghero/frames/landinghero_0164.webp",
-      "sizeBytes": 337684
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0164.webp",
+      "sizeBytes": 337684,
+      "mobileSizeBytes": 79380
     },
     {
       "index": 165,
       "filename": "landinghero_0165.webp",
       "url": "/frames/landinghero/frames/landinghero_0165.webp",
-      "sizeBytes": 323876
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0165.webp",
+      "sizeBytes": 323876,
+      "mobileSizeBytes": 78380
     },
     {
       "index": 166,
       "filename": "landinghero_0166.webp",
       "url": "/frames/landinghero/frames/landinghero_0166.webp",
-      "sizeBytes": 325500
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0166.webp",
+      "sizeBytes": 325500,
+      "mobileSizeBytes": 79094
     },
     {
       "index": 167,
       "filename": "landinghero_0167.webp",
       "url": "/frames/landinghero/frames/landinghero_0167.webp",
-      "sizeBytes": 325500
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0167.webp",
+      "sizeBytes": 325500,
+      "mobileSizeBytes": 79094
     },
     {
       "index": 168,
       "filename": "landinghero_0168.webp",
       "url": "/frames/landinghero/frames/landinghero_0168.webp",
-      "sizeBytes": 340352
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0168.webp",
+      "sizeBytes": 340352,
+      "mobileSizeBytes": 80120
     },
     {
       "index": 169,
       "filename": "landinghero_0169.webp",
       "url": "/frames/landinghero/frames/landinghero_0169.webp",
-      "sizeBytes": 328008
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0169.webp",
+      "sizeBytes": 328008,
+      "mobileSizeBytes": 79220
     },
     {
       "index": 170,
       "filename": "landinghero_0170.webp",
       "url": "/frames/landinghero/frames/landinghero_0170.webp",
-      "sizeBytes": 328008
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0170.webp",
+      "sizeBytes": 328008,
+      "mobileSizeBytes": 79220
     },
     {
       "index": 171,
       "filename": "landinghero_0171.webp",
       "url": "/frames/landinghero/frames/landinghero_0171.webp",
-      "sizeBytes": 325694
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0171.webp",
+      "sizeBytes": 325694,
+      "mobileSizeBytes": 79640
     },
     {
       "index": 172,
       "filename": "landinghero_0172.webp",
       "url": "/frames/landinghero/frames/landinghero_0172.webp",
-      "sizeBytes": 328264
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0172.webp",
+      "sizeBytes": 328264,
+      "mobileSizeBytes": 80042
     },
     {
       "index": 173,
       "filename": "landinghero_0173.webp",
       "url": "/frames/landinghero/frames/landinghero_0173.webp",
-      "sizeBytes": 328264
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0173.webp",
+      "sizeBytes": 328264,
+      "mobileSizeBytes": 80042
     },
     {
       "index": 174,
       "filename": "landinghero_0174.webp",
       "url": "/frames/landinghero/frames/landinghero_0174.webp",
-      "sizeBytes": 333534
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0174.webp",
+      "sizeBytes": 333534,
+      "mobileSizeBytes": 81286
     },
     {
       "index": 175,
       "filename": "landinghero_0175.webp",
       "url": "/frames/landinghero/frames/landinghero_0175.webp",
-      "sizeBytes": 344732
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0175.webp",
+      "sizeBytes": 344732,
+      "mobileSizeBytes": 82354
     },
     {
       "index": 176,
       "filename": "landinghero_0176.webp",
       "url": "/frames/landinghero/frames/landinghero_0176.webp",
-      "sizeBytes": 344732
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0176.webp",
+      "sizeBytes": 344732,
+      "mobileSizeBytes": 82354
     },
     {
       "index": 177,
       "filename": "landinghero_0177.webp",
       "url": "/frames/landinghero/frames/landinghero_0177.webp",
-      "sizeBytes": 331194
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0177.webp",
+      "sizeBytes": 331194,
+      "mobileSizeBytes": 81204
     },
     {
       "index": 178,
       "filename": "landinghero_0178.webp",
       "url": "/frames/landinghero/frames/landinghero_0178.webp",
-      "sizeBytes": 331584
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0178.webp",
+      "sizeBytes": 331584,
+      "mobileSizeBytes": 81582
     },
     {
       "index": 179,
       "filename": "landinghero_0179.webp",
       "url": "/frames/landinghero/frames/landinghero_0179.webp",
-      "sizeBytes": 331584
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0179.webp",
+      "sizeBytes": 331584,
+      "mobileSizeBytes": 81582
     },
     {
       "index": 180,
       "filename": "landinghero_0180.webp",
       "url": "/frames/landinghero/frames/landinghero_0180.webp",
-      "sizeBytes": 346966
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0180.webp",
+      "sizeBytes": 346966,
+      "mobileSizeBytes": 83026
     },
     {
       "index": 181,
       "filename": "landinghero_0181.webp",
       "url": "/frames/landinghero/frames/landinghero_0181.webp",
-      "sizeBytes": 340012
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0181.webp",
+      "sizeBytes": 340012,
+      "mobileSizeBytes": 83456
     },
     {
       "index": 182,
       "filename": "landinghero_0182.webp",
       "url": "/frames/landinghero/frames/landinghero_0182.webp",
-      "sizeBytes": 340012
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0182.webp",
+      "sizeBytes": 340012,
+      "mobileSizeBytes": 83456
     },
     {
       "index": 183,
       "filename": "landinghero_0183.webp",
       "url": "/frames/landinghero/frames/landinghero_0183.webp",
-      "sizeBytes": 336436
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0183.webp",
+      "sizeBytes": 336436,
+      "mobileSizeBytes": 83140
     },
     {
       "index": 184,
       "filename": "landinghero_0184.webp",
       "url": "/frames/landinghero/frames/landinghero_0184.webp",
-      "sizeBytes": 339784
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0184.webp",
+      "sizeBytes": 339784,
+      "mobileSizeBytes": 83702
     },
     {
       "index": 185,
       "filename": "landinghero_0185.webp",
       "url": "/frames/landinghero/frames/landinghero_0185.webp",
-      "sizeBytes": 339784
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0185.webp",
+      "sizeBytes": 339784,
+      "mobileSizeBytes": 83702
     },
     {
       "index": 186,
       "filename": "landinghero_0186.webp",
       "url": "/frames/landinghero/frames/landinghero_0186.webp",
-      "sizeBytes": 345662
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0186.webp",
+      "sizeBytes": 345662,
+      "mobileSizeBytes": 85150
     },
     {
       "index": 187,
       "filename": "landinghero_0187.webp",
       "url": "/frames/landinghero/frames/landinghero_0187.webp",
-      "sizeBytes": 357678
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0187.webp",
+      "sizeBytes": 357678,
+      "mobileSizeBytes": 86134
     },
     {
       "index": 188,
       "filename": "landinghero_0188.webp",
       "url": "/frames/landinghero/frames/landinghero_0188.webp",
-      "sizeBytes": 357678
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0188.webp",
+      "sizeBytes": 357678,
+      "mobileSizeBytes": 86134
     },
     {
       "index": 189,
       "filename": "landinghero_0189.webp",
       "url": "/frames/landinghero/frames/landinghero_0189.webp",
-      "sizeBytes": 346866
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0189.webp",
+      "sizeBytes": 346866,
+      "mobileSizeBytes": 86040
     },
     {
       "index": 190,
       "filename": "landinghero_0190.webp",
       "url": "/frames/landinghero/frames/landinghero_0190.webp",
-      "sizeBytes": 348760
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0190.webp",
+      "sizeBytes": 348760,
+      "mobileSizeBytes": 86580
     },
     {
       "index": 191,
       "filename": "landinghero_0191.webp",
       "url": "/frames/landinghero/frames/landinghero_0191.webp",
-      "sizeBytes": 348760
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0191.webp",
+      "sizeBytes": 348760,
+      "mobileSizeBytes": 86580
     },
     {
       "index": 192,
       "filename": "landinghero_0192.webp",
       "url": "/frames/landinghero/frames/landinghero_0192.webp",
-      "sizeBytes": 360472
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0192.webp",
+      "sizeBytes": 360472,
+      "mobileSizeBytes": 87460
     },
     {
       "index": 193,
       "filename": "landinghero_0193.webp",
       "url": "/frames/landinghero/frames/landinghero_0193.webp",
-      "sizeBytes": 350554
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0193.webp",
+      "sizeBytes": 350554,
+      "mobileSizeBytes": 86384
     },
     {
       "index": 194,
       "filename": "landinghero_0194.webp",
       "url": "/frames/landinghero/frames/landinghero_0194.webp",
-      "sizeBytes": 350554
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0194.webp",
+      "sizeBytes": 350554,
+      "mobileSizeBytes": 86384
     },
     {
       "index": 195,
       "filename": "landinghero_0195.webp",
       "url": "/frames/landinghero/frames/landinghero_0195.webp",
-      "sizeBytes": 348950
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0195.webp",
+      "sizeBytes": 348950,
+      "mobileSizeBytes": 86770
     },
     {
       "index": 196,
       "filename": "landinghero_0196.webp",
       "url": "/frames/landinghero/frames/landinghero_0196.webp",
-      "sizeBytes": 350488
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0196.webp",
+      "sizeBytes": 350488,
+      "mobileSizeBytes": 86550
     },
     {
       "index": 197,
       "filename": "landinghero_0197.webp",
       "url": "/frames/landinghero/frames/landinghero_0197.webp",
-      "sizeBytes": 350488
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0197.webp",
+      "sizeBytes": 350488,
+      "mobileSizeBytes": 86550
     },
     {
       "index": 198,
       "filename": "landinghero_0198.webp",
       "url": "/frames/landinghero/frames/landinghero_0198.webp",
-      "sizeBytes": 352992
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0198.webp",
+      "sizeBytes": 352992,
+      "mobileSizeBytes": 87244
     },
     {
       "index": 199,
       "filename": "landinghero_0199.webp",
       "url": "/frames/landinghero/frames/landinghero_0199.webp",
-      "sizeBytes": 363254
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0199.webp",
+      "sizeBytes": 363254,
+      "mobileSizeBytes": 88206
     },
     {
       "index": 200,
       "filename": "landinghero_0200.webp",
       "url": "/frames/landinghero/frames/landinghero_0200.webp",
-      "sizeBytes": 363254
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0200.webp",
+      "sizeBytes": 363254,
+      "mobileSizeBytes": 88206
     },
     {
       "index": 201,
       "filename": "landinghero_0201.webp",
       "url": "/frames/landinghero/frames/landinghero_0201.webp",
-      "sizeBytes": 353174
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0201.webp",
+      "sizeBytes": 353174,
+      "mobileSizeBytes": 86904
     },
     {
       "index": 202,
       "filename": "landinghero_0202.webp",
       "url": "/frames/landinghero/frames/landinghero_0202.webp",
-      "sizeBytes": 355064
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0202.webp",
+      "sizeBytes": 355064,
+      "mobileSizeBytes": 87632
     },
     {
       "index": 203,
       "filename": "landinghero_0203.webp",
       "url": "/frames/landinghero/frames/landinghero_0203.webp",
-      "sizeBytes": 355064
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0203.webp",
+      "sizeBytes": 355064,
+      "mobileSizeBytes": 87632
     },
     {
       "index": 204,
       "filename": "landinghero_0204.webp",
       "url": "/frames/landinghero/frames/landinghero_0204.webp",
-      "sizeBytes": 366018
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0204.webp",
+      "sizeBytes": 366018,
+      "mobileSizeBytes": 88634
     },
     {
       "index": 205,
       "filename": "landinghero_0205.webp",
       "url": "/frames/landinghero/frames/landinghero_0205.webp",
-      "sizeBytes": 359338
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0205.webp",
+      "sizeBytes": 359338,
+      "mobileSizeBytes": 88790
     },
     {
       "index": 206,
       "filename": "landinghero_0206.webp",
       "url": "/frames/landinghero/frames/landinghero_0206.webp",
-      "sizeBytes": 359338
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0206.webp",
+      "sizeBytes": 359338,
+      "mobileSizeBytes": 88790
     },
     {
       "index": 207,
       "filename": "landinghero_0207.webp",
       "url": "/frames/landinghero/frames/landinghero_0207.webp",
-      "sizeBytes": 359044
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0207.webp",
+      "sizeBytes": 359044,
+      "mobileSizeBytes": 88464
     },
     {
       "index": 208,
       "filename": "landinghero_0208.webp",
       "url": "/frames/landinghero/frames/landinghero_0208.webp",
-      "sizeBytes": 358818
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0208.webp",
+      "sizeBytes": 358818,
+      "mobileSizeBytes": 88428
     },
     {
       "index": 209,
       "filename": "landinghero_0209.webp",
       "url": "/frames/landinghero/frames/landinghero_0209.webp",
-      "sizeBytes": 358818
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0209.webp",
+      "sizeBytes": 358818,
+      "mobileSizeBytes": 88428
     },
     {
       "index": 210,
       "filename": "landinghero_0210.webp",
       "url": "/frames/landinghero/frames/landinghero_0210.webp",
-      "sizeBytes": 360556
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0210.webp",
+      "sizeBytes": 360556,
+      "mobileSizeBytes": 88798
     },
     {
       "index": 211,
       "filename": "landinghero_0211.webp",
       "url": "/frames/landinghero/frames/landinghero_0211.webp",
-      "sizeBytes": 369456
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0211.webp",
+      "sizeBytes": 369456,
+      "mobileSizeBytes": 89534
     },
     {
       "index": 212,
       "filename": "landinghero_0212.webp",
       "url": "/frames/landinghero/frames/landinghero_0212.webp",
-      "sizeBytes": 369456
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0212.webp",
+      "sizeBytes": 369456,
+      "mobileSizeBytes": 89534
     },
     {
       "index": 213,
       "filename": "landinghero_0213.webp",
       "url": "/frames/landinghero/frames/landinghero_0213.webp",
-      "sizeBytes": 360490
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0213.webp",
+      "sizeBytes": 360490,
+      "mobileSizeBytes": 88976
     },
     {
       "index": 214,
       "filename": "landinghero_0214.webp",
       "url": "/frames/landinghero/frames/landinghero_0214.webp",
-      "sizeBytes": 363266
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0214.webp",
+      "sizeBytes": 363266,
+      "mobileSizeBytes": 89206
     },
     {
       "index": 215,
       "filename": "landinghero_0215.webp",
       "url": "/frames/landinghero/frames/landinghero_0215.webp",
-      "sizeBytes": 363266
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0215.webp",
+      "sizeBytes": 363266,
+      "mobileSizeBytes": 89206
     },
     {
       "index": 216,
       "filename": "landinghero_0216.webp",
       "url": "/frames/landinghero/frames/landinghero_0216.webp",
-      "sizeBytes": 370642
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0216.webp",
+      "sizeBytes": 370642,
+      "mobileSizeBytes": 89814
     },
     {
       "index": 217,
       "filename": "landinghero_0217.webp",
       "url": "/frames/landinghero/frames/landinghero_0217.webp",
-      "sizeBytes": 366348
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0217.webp",
+      "sizeBytes": 366348,
+      "mobileSizeBytes": 89772
     },
     {
       "index": 218,
       "filename": "landinghero_0218.webp",
       "url": "/frames/landinghero/frames/landinghero_0218.webp",
-      "sizeBytes": 366348
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0218.webp",
+      "sizeBytes": 366348,
+      "mobileSizeBytes": 89772
     },
     {
       "index": 219,
       "filename": "landinghero_0219.webp",
       "url": "/frames/landinghero/frames/landinghero_0219.webp",
-      "sizeBytes": 367018
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0219.webp",
+      "sizeBytes": 367018,
+      "mobileSizeBytes": 89940
     },
     {
       "index": 220,
       "filename": "landinghero_0220.webp",
       "url": "/frames/landinghero/frames/landinghero_0220.webp",
-      "sizeBytes": 367842
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0220.webp",
+      "sizeBytes": 367842,
+      "mobileSizeBytes": 89958
     },
     {
       "index": 221,
       "filename": "landinghero_0221.webp",
       "url": "/frames/landinghero/frames/landinghero_0221.webp",
-      "sizeBytes": 367842
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0221.webp",
+      "sizeBytes": 367842,
+      "mobileSizeBytes": 89958
     },
     {
       "index": 222,
       "filename": "landinghero_0222.webp",
       "url": "/frames/landinghero/frames/landinghero_0222.webp",
-      "sizeBytes": 369550
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0222.webp",
+      "sizeBytes": 369550,
+      "mobileSizeBytes": 90456
     },
     {
       "index": 223,
       "filename": "landinghero_0223.webp",
       "url": "/frames/landinghero/frames/landinghero_0223.webp",
-      "sizeBytes": 375028
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0223.webp",
+      "sizeBytes": 375028,
+      "mobileSizeBytes": 90746
     },
     {
       "index": 224,
       "filename": "landinghero_0224.webp",
       "url": "/frames/landinghero/frames/landinghero_0224.webp",
-      "sizeBytes": 375028
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0224.webp",
+      "sizeBytes": 375028,
+      "mobileSizeBytes": 90746
     },
     {
       "index": 225,
       "filename": "landinghero_0225.webp",
       "url": "/frames/landinghero/frames/landinghero_0225.webp",
-      "sizeBytes": 367144
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0225.webp",
+      "sizeBytes": 367144,
+      "mobileSizeBytes": 89692
     },
     {
       "index": 226,
       "filename": "landinghero_0226.webp",
       "url": "/frames/landinghero/frames/landinghero_0226.webp",
-      "sizeBytes": 368730
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0226.webp",
+      "sizeBytes": 368730,
+      "mobileSizeBytes": 90030
     },
     {
       "index": 227,
       "filename": "landinghero_0227.webp",
       "url": "/frames/landinghero/frames/landinghero_0227.webp",
-      "sizeBytes": 368730
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0227.webp",
+      "sizeBytes": 368730,
+      "mobileSizeBytes": 90030
     },
     {
       "index": 228,
       "filename": "landinghero_0228.webp",
       "url": "/frames/landinghero/frames/landinghero_0228.webp",
-      "sizeBytes": 376006
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0228.webp",
+      "sizeBytes": 376006,
+      "mobileSizeBytes": 90674
     },
     {
       "index": 229,
       "filename": "landinghero_0229.webp",
       "url": "/frames/landinghero/frames/landinghero_0229.webp",
-      "sizeBytes": 371370
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0229.webp",
+      "sizeBytes": 371370,
+      "mobileSizeBytes": 91424
     },
     {
       "index": 230,
       "filename": "landinghero_0230.webp",
       "url": "/frames/landinghero/frames/landinghero_0230.webp",
-      "sizeBytes": 371370
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0230.webp",
+      "sizeBytes": 371370,
+      "mobileSizeBytes": 91424
     },
     {
       "index": 231,
       "filename": "landinghero_0231.webp",
       "url": "/frames/landinghero/frames/landinghero_0231.webp",
-      "sizeBytes": 368724
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0231.webp",
+      "sizeBytes": 368724,
+      "mobileSizeBytes": 90250
     },
     {
       "index": 232,
       "filename": "landinghero_0232.webp",
       "url": "/frames/landinghero/frames/landinghero_0232.webp",
-      "sizeBytes": 368724
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0232.webp",
+      "sizeBytes": 368724,
+      "mobileSizeBytes": 90250
     },
     {
       "index": 233,
       "filename": "landinghero_0233.webp",
       "url": "/frames/landinghero/frames/landinghero_0233.webp",
-      "sizeBytes": 368414
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0233.webp",
+      "sizeBytes": 368414,
+      "mobileSizeBytes": 90130
     },
     {
       "index": 234,
       "filename": "landinghero_0234.webp",
       "url": "/frames/landinghero/frames/landinghero_0234.webp",
-      "sizeBytes": 371140
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0234.webp",
+      "sizeBytes": 371140,
+      "mobileSizeBytes": 90486
     },
     {
       "index": 235,
       "filename": "landinghero_0235.webp",
       "url": "/frames/landinghero/frames/landinghero_0235.webp",
-      "sizeBytes": 369914
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0235.webp",
+      "sizeBytes": 369914,
+      "mobileSizeBytes": 90282
     },
     {
       "index": 236,
       "filename": "landinghero_0236.webp",
       "url": "/frames/landinghero/frames/landinghero_0236.webp",
-      "sizeBytes": 375644
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0236.webp",
+      "sizeBytes": 375644,
+      "mobileSizeBytes": 91946
     },
     {
       "index": 237,
       "filename": "landinghero_0237.webp",
       "url": "/frames/landinghero/frames/landinghero_0237.webp",
-      "sizeBytes": 370224
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0237.webp",
+      "sizeBytes": 370224,
+      "mobileSizeBytes": 91520
     },
     {
       "index": 238,
       "filename": "landinghero_0238.webp",
       "url": "/frames/landinghero/frames/landinghero_0238.webp",
-      "sizeBytes": 371504
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0238.webp",
+      "sizeBytes": 371504,
+      "mobileSizeBytes": 91448
     },
     {
       "index": 239,
       "filename": "landinghero_0239.webp",
       "url": "/frames/landinghero/frames/landinghero_0239.webp",
-      "sizeBytes": 369874
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0239.webp",
+      "sizeBytes": 369874,
+      "mobileSizeBytes": 91174
     },
     {
       "index": 240,
       "filename": "landinghero_0240.webp",
       "url": "/frames/landinghero/frames/landinghero_0240.webp",
-      "sizeBytes": 373310
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0240.webp",
+      "sizeBytes": 373310,
+      "mobileSizeBytes": 91820
     },
     {
       "index": 241,
       "filename": "landinghero_0241.webp",
       "url": "/frames/landinghero/frames/landinghero_0241.webp",
-      "sizeBytes": 372016
+      "mobileUrl": "/frames/landinghero/mobile/landinghero_0241.webp",
+      "sizeBytes": 372016,
+      "mobileSizeBytes": 91496
     }
   ]
 }

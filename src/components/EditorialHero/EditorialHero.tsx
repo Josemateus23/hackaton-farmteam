@@ -14,9 +14,10 @@ const manifest = manifestData as FramesManifest;
 
 interface EditorialHeroProps {
   onSkip?: () => void;
+  isStaticMode?: boolean;
 }
 
-export const EditorialHero: React.FC<EditorialHeroProps> = ({ onSkip }) => {
+export const EditorialHero: React.FC<EditorialHeroProps> = ({ onSkip, isStaticMode = false }) => {
   const trackRef = useRef<HTMLDivElement>(null);
   const stageRef = useRef<HTMLDivElement>(null);
   const visualRef = useRef<HTMLDivElement>(null);
@@ -35,6 +36,9 @@ export const EditorialHero: React.FC<EditorialHeroProps> = ({ onSkip }) => {
   const [isReducedMotion, setIsReducedMotion] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
+  // Combined flag for accessibility and user preference
+  const shouldBeStatic = isReducedMotion || isStaticMode;
+
   // Animation & Rendering tracking refs
   const activeFrameIndexRef = useRef(0);
   const lastDrawnFrameIndexRef = useRef<number | null>(null);
@@ -45,7 +49,9 @@ export const EditorialHero: React.FC<EditorialHeroProps> = ({ onSkip }) => {
 
   // Check for mobile viewport
   const checkViewport = useCallback(() => {
-    setIsMobile(window.innerWidth <= 900);
+    const mobile = window.innerWidth <= 900;
+    setIsMobile(mobile);
+    loaderRef.current?.setIsMobile(mobile);
   }, []);
 
   // Handle Skip Opening click
@@ -279,15 +285,16 @@ export const EditorialHero: React.FC<EditorialHeroProps> = ({ onSkip }) => {
     checkViewport();
     window.addEventListener('resize', checkViewport);
 
-    // If reduced motion is preferred, do not initialize sequence or ScrollTrigger
-    if (isReducedMotion) {
+    // If reduced motion or static mode is preferred, do not initialize sequence or ScrollTrigger
+    if (shouldBeStatic) {
       return () => {
         window.removeEventListener('resize', checkViewport);
       };
     }
 
-    // 1. Initialize Loader
-    const loader = new FrameLoader(manifest.frames);
+    // 1. Initialize Loader with mobile variant awareness
+    const mobileDetected = window.innerWidth <= 900;
+    const loader = new FrameLoader(manifest.frames, mobileDetected);
     loaderRef.current = loader;
 
     // Check URL query param for deterministic preview/validation (e.g. ?progress=0.25)
@@ -382,10 +389,14 @@ export const EditorialHero: React.FC<EditorialHeroProps> = ({ onSkip }) => {
       loader.destroy();
       loaderRef.current = null;
     };
-  }, [isReducedMotion, checkViewport, resizeCanvas, requestFrameRender, applyProgress]);
+  }, [shouldBeStatic, checkViewport, resizeCanvas, requestFrameRender, applyProgress]);
 
-  // Reduced motion alternative representation
-  if (isReducedMotion) {
+  // Reduced motion / static mode alternative representation
+  if (shouldBeStatic) {
+    const posterUrl = (isMobile && manifest.frames[0].mobileUrl)
+      ? manifest.frames[0].mobileUrl
+      : manifest.frames[0].url;
+
     return (
       <section className={styles.reducedMotionContainer} aria-label={narrativeConfig.copy.descriptor}>
         <div className={styles.topBar} style={{ position: 'static', padding: '0 0 2rem 0' }}>
@@ -420,7 +431,7 @@ export const EditorialHero: React.FC<EditorialHeroProps> = ({ onSkip }) => {
 
         <div className={styles.reducedMotionImageWrapper}>
           <img
-            src={manifest.frames[0].url}
+            src={posterUrl}
             alt={narrativeConfig.copy.accessibilityAlt}
             className={styles.reducedMotionImage}
           />
@@ -473,7 +484,7 @@ export const EditorialHero: React.FC<EditorialHeroProps> = ({ onSkip }) => {
           <div ref={visualRef} className={styles.visualContainer}>
             {/* LCP Poster Image: Loads high-priority, replaced once canvas is drawn */}
             <img
-              src={manifest.frames[0].url}
+              src={(isMobile && manifest.frames[0].mobileUrl) ? manifest.frames[0].mobileUrl : manifest.frames[0].url}
               alt=""
               role="presentation"
               fetchPriority="high"
